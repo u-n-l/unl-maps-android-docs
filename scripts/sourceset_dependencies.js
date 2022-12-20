@@ -1,1 +1,1 @@
-sourceset_dependencies='{":MapboxGLAndroidSDK:dokkaHtml/debug":[],":MapboxGLAndroidSDK:dokkaHtml/main":[],":MapboxGLAndroidSDK:dokkaHtml/release":[]}'
+sourceset_dependencies='{":UnlMapAndroidSDK:dokkaHtml/debug":[],":UnlMapAndroidSDK:dokkaHtml/main":[],":UnlMapAndroidSDK:dokkaHtml/release":[]}'

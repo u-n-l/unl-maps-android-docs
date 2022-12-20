@@ -1,368 +1,380 @@
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>CustomGeometrySource</title>
-<link href="../../../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" async="async"></script>  </head>
-  <body>
-    <div id="container">
-      <div id="leftColumn"><a href="../../../index.html">
-          <div id="logo"></div>
-        </a>
-        <div id="paneSearch"></div>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>UnlMapAndroidSDK</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
         <div id="sideMenu"></div>
-      </div>
-      <div id="main">
-        <div id="leftToggler"><span class="icon-toggler"></span></div>
-<script type="text/javascript" src="../../../scripts/main.js"></script>        <div class="main-content" id="content" pageIds="MapboxGLAndroidSDK::com.mapbox.mapboxsdk.style.sources/CustomGeometrySource///PointingToDeclaration//95609766">
-          <div class="navigation-wrapper" id="navigation-wrapper">
-            <div class="breadcrumbs"><a href="../../../index.html">MapboxGLAndroidSDK</a>/<a href="../index.html">com.mapbox.mapboxsdk.style.sources</a>/<a href="index.html">CustomGeometrySource</a></div>
-            <div class="pull-right d-flex">
-              <div id="searchBar"></div>
-            </div>
-          </div>
-          <div class="cover ">
-            <h1 class="cover"><span>Custom</span><wbr></wbr><span>Geometry</span><wbr></wbr><span>Source</span></h1>
-            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open class <a href="index.html">CustomGeometrySource</a> : <a href="../-source/index.html">Source</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Custom Vector Source, allows using FeatureCollections. </p><p class="paragraph">CustomGeometrySource uses a coalescing model for frequent data updates targeting the same tile id, which means, that the in-progress request as well as the last scheduled request are guaranteed to finish. Any requests scheduled meanwhile can be canceled.</p></div></div>
-          </div>
-          <div class="tabbedcontent">
-            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
-            <div class="tabs-section-body">
-              <h2 class="tabbedcontent">Constructors</h2>
-              <div class="table" data-togglable="Constructors"><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FCustomGeometrySource%2F%23java.lang.String%23com.mapbox.mapboxsdk.style.sources.GeometryTileProvider%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" anchor-label="CustomGeometrySource" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FCustomGeometrySource%2F%23java.lang.String%23com.mapbox.mapboxsdk.style.sources.GeometryTileProvider%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-custom-geometry-source.html">CustomGeometrySource</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FCustomGeometrySource%2F%23java.lang.String%23com.mapbox.mapboxsdk.style.sources.GeometryTileProvider%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/UiThread.html">UiThread</a>()</div></div>open fun <a href="-custom-geometry-source.html">CustomGeometrySource</a>(id: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>, provider: <a href="../-geometry-tile-provider/index.html">GeometryTileProvider</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">Create a CustomGeometrySource</div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FCustomGeometrySource%2F%23java.lang.String%23com.mapbox.mapboxsdk.style.sources.CustomGeometrySourceOptions%23com.mapbox.mapboxsdk.style.sources.GeometryTileProvider%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" anchor-label="CustomGeometrySource" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FCustomGeometrySource%2F%23java.lang.String%23com.mapbox.mapboxsdk.style.sources.CustomGeometrySourceOptions%23com.mapbox.mapboxsdk.style.sources.GeometryTileProvider%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-custom-geometry-source.html">CustomGeometrySource</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FCustomGeometrySource%2F%23java.lang.String%23com.mapbox.mapboxsdk.style.sources.CustomGeometrySourceOptions%23com.mapbox.mapboxsdk.style.sources.GeometryTileProvider%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/UiThread.html">UiThread</a>()</div></div>open fun <a href="-custom-geometry-source.html">CustomGeometrySource</a>(id: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>, options: <a href="../-custom-geometry-source-options/index.html">CustomGeometrySourceOptions</a>, provider: <a href="../-geometry-tile-provider/index.html">GeometryTileProvider</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">Create a CustomGeometrySource with non-default <a href="../-custom-geometry-source-options/index.html">CustomGeometrySourceOptions</a>.</div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h2 class="">Functions</h2>
-              <div class="table" data-togglable="Functions"><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetAttribution%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getAttribution" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetAttribution%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-source/get-attribution.html">getAttribution</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetAttribution%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()</div></div>open fun <a href="../-source/get-attribution.html">getAttribution</a>(): <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="UnlMapAndroidSDK::com.mapbox.mapboxsdk.style.sources/CustomGeometrySource///PointingToDeclaration//2110661137">
+  <div class="breadcrumbs"><a href="../../../index.html">UnlMapAndroidSDK</a><span class="delimiter">/</span><a href="../index.html">com.mapbox.mapboxsdk.style.sources</a><span class="delimiter">/</span><span class="current">CustomGeometrySource</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Custom</span><wbr></wbr><span>Geometry</span><wbr></wbr><span><span>Source</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">CustomGeometrySource</a> : <a href="../-source/index.html">Source</a></div><p class="paragraph">Custom Vector Source, allows using FeatureCollections. </p><p class="paragraph"> CustomGeometrySource uses a coalescing model for frequent data updates targeting the same tile id, which means, that the in-progress request as well as the last scheduled request are guaranteed to finish. Any requests scheduled meanwhile can be canceled.</p></div></div>
   </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetAttribution%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getAttribution" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetAttribution%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetAttribution%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getAttribution" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetAttribution%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Retrieve the source attribution.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetId%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getId" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetId%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-source/get-id.html">getId</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetId%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()</div></div>open fun <a href="../-source/get-id.html">getId</a>(): <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetId%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getId" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetId%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetId%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getId" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetId%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Retrieve the source id</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMaxOverscaleFactorForParentTiles%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getMaxOverscaleFactorForParentTiles" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMaxOverscaleFactorForParentTiles%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-source/get-max-overscale-factor-for-parent-tiles.html">getMaxOverscaleFactorForParentTiles</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMaxOverscaleFactorForParentTiles%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()</div></div>open fun <a href="../-source/get-max-overscale-factor-for-parent-tiles.html">getMaxOverscaleFactorForParentTiles</a>(): <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMaxOverscaleFactorForParentTiles%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getMaxOverscaleFactorForParentTiles" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMaxOverscaleFactorForParentTiles%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMaxOverscaleFactorForParentTiles%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getMaxOverscaleFactorForParentTiles" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMaxOverscaleFactorForParentTiles%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Retrieve current maximum overscale factor for parent tiles.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMinimumTileUpdateInterval%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getMinimumTileUpdateInterval" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMinimumTileUpdateInterval%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-source/get-minimum-tile-update-interval.html">getMinimumTileUpdateInterval</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMinimumTileUpdateInterval%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()</div></div>open fun <a href="../-source/get-minimum-tile-update-interval.html">getMinimumTileUpdateInterval</a>(): <a href="https://developer.android.com/reference/kotlin/java/lang/Long.html">Long</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMinimumTileUpdateInterval%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getMinimumTileUpdateInterval" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMinimumTileUpdateInterval%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMinimumTileUpdateInterval%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getMinimumTileUpdateInterval" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMinimumTileUpdateInterval%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Retrieve the minimum tile update interval, which is used to throttle the tile update network requests.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetNativePtr%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getNativePtr" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetNativePtr%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-vector-source/index.html#%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetNativePtr%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766">getNativePtr</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetNativePtr%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="../-vector-source/index.html#%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetNativePtr%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766">getNativePtr</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetNativePtr%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getNativePtr" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetNativePtr%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetNativePtr%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getNativePtr" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetNativePtr%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Internal use</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetPrefetchZoomDelta%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getPrefetchZoomDelta" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetPrefetchZoomDelta%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-source/get-prefetch-zoom-delta.html">getPrefetchZoomDelta</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetPrefetchZoomDelta%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()</div></div>open fun <a href="../-source/get-prefetch-zoom-delta.html">getPrefetchZoomDelta</a>(): <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetPrefetchZoomDelta%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getPrefetchZoomDelta" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetPrefetchZoomDelta%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetPrefetchZoomDelta%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getPrefetchZoomDelta" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetPrefetchZoomDelta%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Retrieve current pre-fetching zoom delta.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FinvalidateRegion%2F%23com.mapbox.mapboxsdk.geometry.LatLngBounds%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="invalidateRegion" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FinvalidateRegion%2F%23com.mapbox.mapboxsdk.geometry.LatLngBounds%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="invalidate-region.html">invalidateRegion</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FinvalidateRegion%2F%23com.mapbox.mapboxsdk.geometry.LatLngBounds%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="invalidate-region.html">invalidateRegion</a>(bounds: <a href="../../com.mapbox.mapboxsdk.geometry/-lat-lng-bounds/index.html">LatLngBounds</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FinvalidateRegion%2F%23com.mapbox.mapboxsdk.geometry.LatLngBounds%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="invalidateRegion" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FinvalidateRegion%2F%23com.mapbox.mapboxsdk.geometry.LatLngBounds%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FinvalidateRegion%2F%23com.mapbox.mapboxsdk.geometry.LatLngBounds%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="invalidateRegion" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FinvalidateRegion%2F%23com.mapbox.mapboxsdk.geometry.LatLngBounds%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Invalidate previously provided features within a given bounds at all zoom levels.Invoking this method will result in new requests to `GeometryTileProvider` for regionsthat contain, include, or intersect with the provided bounds.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FinvalidateTile%2F%23int%23int%23int%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="invalidateTile" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FinvalidateTile%2F%23int%23int%23int%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="invalidate-tile.html">invalidateTile</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FinvalidateTile%2F%23int%23int%23int%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="invalidate-tile.html">invalidateTile</a>(zoomLevel: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, x: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, y: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FinvalidateTile%2F%23int%23int%23int%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="invalidateTile" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FinvalidateTile%2F%23int%23int%23int%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FinvalidateTile%2F%23int%23int%23int%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="invalidateTile" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FinvalidateTile%2F%23int%23int%23int%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Invalidate the geometry contents of a specific tile.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FisVolatile%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="isVolatile" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FisVolatile%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-source/is-volatile.html">isVolatile</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FisVolatile%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()</div></div>open fun <a href="../-source/is-volatile.html">isVolatile</a>(): <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FisVolatile%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="isVolatile" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FisVolatile%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FisVolatile%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="isVolatile" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FisVolatile%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Retrieve whether or not the fetched tiles for the given source should be stored in the local cache</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FquerySourceFeatures%2F%23com.mapbox.mapboxsdk.style.expressions.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="querySourceFeatures" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FquerySourceFeatures%2F%23com.mapbox.mapboxsdk.style.expressions.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="query-source-features.html">querySourceFeatures</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FquerySourceFeatures%2F%23com.mapbox.mapboxsdk.style.expressions.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()</div></div>open fun <a href="query-source-features.html">querySourceFeatures</a>(<span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>() </span>filter: <a href="../../com.mapbox.mapboxsdk.style.expressions/-expression/index.html">Expression</a>): <a href="https://developer.android.com/reference/kotlin/java/util/List.html">List</a>&lt;<span data-unresolved-link="com.mapbox.geojson/Feature///PointingToDeclaration/">Feature</span>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FquerySourceFeatures%2F%23com.mapbox.mapboxsdk.style.expressions.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="querySourceFeatures" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FquerySourceFeatures%2F%23com.mapbox.mapboxsdk.style.expressions.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FquerySourceFeatures%2F%23com.mapbox.mapboxsdk.style.expressions.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="querySourceFeatures" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FquerySourceFeatures%2F%23com.mapbox.mapboxsdk.style.expressions.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Queries the source for features.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetDetached%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setDetached" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetDetached%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-vector-source/index.html#%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetDetached%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766">setDetached</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetDetached%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="../-vector-source/index.html#%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetDetached%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766">setDetached</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMaxOverscaleFactorForParentTiles%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setMaxOverscaleFactorForParentTiles" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMaxOverscaleFactorForParentTiles%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-source/set-max-overscale-factor-for-parent-tiles.html">setMaxOverscaleFactorForParentTiles</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMaxOverscaleFactorForParentTiles%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="../-source/set-max-overscale-factor-for-parent-tiles.html">setMaxOverscaleFactorForParentTiles</a>(<span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>() </span>maxOverscaleFactor: <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMaxOverscaleFactorForParentTiles%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setMaxOverscaleFactorForParentTiles" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMaxOverscaleFactorForParentTiles%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMaxOverscaleFactorForParentTiles%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setMaxOverscaleFactorForParentTiles" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMaxOverscaleFactorForParentTiles%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>When a set of tiles for a current zoom level is being rendered and some of theideal tiles that cover the screen are not yet loaded, parent tile could beused instead.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMinimumTileUpdateInterval%2F%23java.lang.Long%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setMinimumTileUpdateInterval" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMinimumTileUpdateInterval%2F%23java.lang.Long%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-source/set-minimum-tile-update-interval.html">setMinimumTileUpdateInterval</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMinimumTileUpdateInterval%2F%23java.lang.Long%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="../-source/set-minimum-tile-update-interval.html">setMinimumTileUpdateInterval</a>(interval: <a href="https://developer.android.com/reference/kotlin/java/lang/Long.html">Long</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMinimumTileUpdateInterval%2F%23java.lang.Long%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setMinimumTileUpdateInterval" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMinimumTileUpdateInterval%2F%23java.lang.Long%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMinimumTileUpdateInterval%2F%23java.lang.Long%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setMinimumTileUpdateInterval" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMinimumTileUpdateInterval%2F%23java.lang.Long%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Sets the minimum tile update interval, which is used to throttle the tile update network requests.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetPrefetchZoomDelta%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setPrefetchZoomDelta" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetPrefetchZoomDelta%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-source/set-prefetch-zoom-delta.html">setPrefetchZoomDelta</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetPrefetchZoomDelta%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="../-source/set-prefetch-zoom-delta.html">setPrefetchZoomDelta</a>(<span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>() </span>delta: <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetPrefetchZoomDelta%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setPrefetchZoomDelta" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetPrefetchZoomDelta%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetPrefetchZoomDelta%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setPrefetchZoomDelta" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetPrefetchZoomDelta%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Set the tile pre-fetching zoom delta for current source.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FsetTileData%2F%23int%23int%23int%23com.mapbox.geojson.FeatureCollection%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setTileData" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FsetTileData%2F%23int%23int%23int%23com.mapbox.geojson.FeatureCollection%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="set-tile-data.html">setTileData</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FsetTileData%2F%23int%23int%23int%23com.mapbox.geojson.FeatureCollection%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="set-tile-data.html">setTileData</a>(zoomLevel: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, x: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, y: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, data: <span data-unresolved-link="com.mapbox.geojson/FeatureCollection///PointingToDeclaration/">FeatureCollection</span>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FsetTileData%2F%23int%23int%23int%23com.mapbox.geojson.FeatureCollection%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setTileData" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FsetTileData%2F%23int%23int%23int%23com.mapbox.geojson.FeatureCollection%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FsetTileData%2F%23int%23int%23int%23com.mapbox.geojson.FeatureCollection%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setTileData" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FsetTileData%2F%23int%23int%23int%23com.mapbox.geojson.FeatureCollection%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Set or update geometry contents of a specific tile.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetVolatile%2F%23java.lang.Boolean%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setVolatile" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetVolatile%2F%23java.lang.Boolean%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-source/set-volatile.html">setVolatile</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetVolatile%2F%23java.lang.Boolean%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="../-source/set-volatile.html">setVolatile</a>(value: <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetVolatile%2F%23java.lang.Boolean%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setVolatile" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetVolatile%2F%23java.lang.Boolean%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetVolatile%2F%23java.lang.Boolean%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setVolatile" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetVolatile%2F%23java.lang.Boolean%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Set a flag defining whether or not the fetched tiles for the given source should be stored in the local cache</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h2 class="">Properties</h2>
-              <div class="table" data-togglable="Properties"><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FTHREAD_POOL_LIMIT%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F95609766" anchor-label="THREAD_POOL_LIMIT" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FTHREAD_POOL_LIMIT%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-t-h-r-e-a-d_-p-o-o-l_-l-i-m-i-t.html">THREAD_POOL_LIMIT</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FTHREAD_POOL_LIMIT%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FTHREAD_POOL_LIMIT%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F95609766" anchor-label="THREAD_POOL_LIMIT" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FTHREAD_POOL_LIMIT%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="symbol monospace">val <a href="-t-h-r-e-a-d_-p-o-o-l_-l-i-m-i-t.html">THREAD_POOL_LIMIT</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FTHREAD_PREFIX%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F95609766" anchor-label="THREAD_PREFIX" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FTHREAD_PREFIX%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-t-h-r-e-a-d_-p-r-e-f-i-x.html">THREAD_PREFIX</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FTHREAD_PREFIX%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FTHREAD_PREFIX%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F95609766" anchor-label="THREAD_PREFIX" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FCustomGeometrySource%2FTHREAD_PREFIX%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="symbol monospace">val <a href="-t-h-r-e-a-d_-p-r-e-f-i-x.html">THREAD_PREFIX</a>: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="-1438169540%2FConstructors%2F2110661137" anchor-label="CustomGeometrySource" id="-1438169540%2FConstructors%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-custom-geometry-source.html"><span>Custom</span><wbr></wbr><span>Geometry</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1438169540%2FConstructors%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/UiThread.html"><span class="token annotation builtin">UiThread</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="-custom-geometry-source.html"><span class="token function">CustomGeometrySource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">provider<span class="token operator">: </span><a href="../-geometry-tile-provider/index.html">GeometryTileProvider</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Create a CustomGeometrySource</div></div></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+<a data-name="2101611359%2FConstructors%2F2110661137" anchor-label="CustomGeometrySource" id="2101611359%2FConstructors%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-custom-geometry-source.html"><span>Custom</span><wbr></wbr><span>Geometry</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2101611359%2FConstructors%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/UiThread.html"><span class="token annotation builtin">UiThread</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="-custom-geometry-source.html"><span class="token function">CustomGeometrySource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="../-custom-geometry-source-options/index.html">CustomGeometrySourceOptions</a><span class="token punctuation">, </span></span><span class="parameter ">provider<span class="token operator">: </span><a href="../-geometry-tile-provider/index.html">GeometryTileProvider</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Create a CustomGeometrySource with non-default <a href="../-custom-geometry-source-options/index.html">CustomGeometrySourceOptions</a>.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-708294359%2FFunctions%2F2110661137" anchor-label="getAttribution" id="-708294359%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/get-attribution.html"><span>get</span><wbr></wbr><span><span>Attribution</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-708294359%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/get-attribution.html"><span class="token function">getAttribution</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></div><div class="brief ">Retrieve the source attribution.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="13015447%2FFunctions%2F2110661137" anchor-label="getId" id="13015447%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/get-id.html"><span>get</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="13015447%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/get-id.html"><span class="token function">getId</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></div><div class="brief ">Retrieve the source id</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1173109697%2FFunctions%2F2110661137" anchor-label="getMaxOverscaleFactorForParentTiles" id="-1173109697%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/get-max-overscale-factor-for-parent-tiles.html"><span>get</span><wbr></wbr><span>Max</span><wbr></wbr><span>Overscale</span><wbr></wbr><span>Factor</span><wbr></wbr><span>For</span><wbr></wbr><span>Parent</span><wbr></wbr><span><span>Tiles</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1173109697%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/get-max-overscale-factor-for-parent-tiles.html"><span class="token function">getMaxOverscaleFactorForParentTiles</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a></div><div class="brief ">Retrieve current maximum overscale factor for parent tiles.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="436722974%2FFunctions%2F2110661137" anchor-label="getMinimumTileUpdateInterval" id="436722974%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/get-minimum-tile-update-interval.html"><span>get</span><wbr></wbr><span>Minimum</span><wbr></wbr><span>Tile</span><wbr></wbr><span>Update</span><wbr></wbr><span><span>Interval</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="436722974%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/get-minimum-tile-update-interval.html"><span class="token function">getMinimumTileUpdateInterval</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Long.html">Long</a></div><div class="brief ">Retrieve the minimum tile update interval, which is used to throttle the tile update network requests.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="486082778%2FFunctions%2F2110661137" anchor-label="getPrefetchZoomDelta" id="486082778%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/get-prefetch-zoom-delta.html"><span>get</span><wbr></wbr><span>Prefetch</span><wbr></wbr><span>Zoom</span><wbr></wbr><span><span>Delta</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="486082778%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/get-prefetch-zoom-delta.html"><span class="token function">getPrefetchZoomDelta</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a></div><div class="brief ">Retrieve current pre-fetching zoom delta.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-705496060%2FFunctions%2F2110661137" anchor-label="invalidateRegion" id="-705496060%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="invalidate-region.html"><span>invalidate</span><wbr></wbr><span><span>Region</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-705496060%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="invalidate-region.html"><span class="token function">invalidateRegion</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bounds<span class="token operator">: </span><a href="../../com.mapbox.mapboxsdk.geometry/-lat-lng-bounds/index.html">LatLngBounds</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Invalidate previously provided features within a given bounds at all zoom levels.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1430726799%2FFunctions%2F2110661137" anchor-label="invalidateTile" id="1430726799%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="invalidate-tile.html"><span>invalidate</span><wbr></wbr><span><span>Tile</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1430726799%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="invalidate-tile.html"><span class="token function">invalidateTile</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">zoomLevel<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">x<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">y<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Invalidate the geometry contents of a specific tile.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1541253292%2FFunctions%2F2110661137" anchor-label="isVolatile" id="1541253292%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/is-volatile.html"><span>is</span><wbr></wbr><span><span>Volatile</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1541253292%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/is-volatile.html"><span class="token function">isVolatile</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a></div><div class="brief ">Retrieve whether or not the fetched tiles for the given source should be stored in the local cache</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="815749504%2FFunctions%2F2110661137" anchor-label="querySourceFeatures" id="815749504%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="query-source-features.html"><span>query</span><wbr></wbr><span>Source</span><wbr></wbr><span><span>Features</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="815749504%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="query-source-features.html"><span class="token function">querySourceFeatures</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a> </span>filter<span class="token operator">: </span><a href="../../com.mapbox.mapboxsdk.style.expressions/-expression/index.html">Expression</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/List.html">List</a><span class="token operator">&lt;</span><span data-unresolved-link="com.mapbox.geojson/Feature///PointingToDeclaration/">Feature</span><span class="token operator">&gt;</span></div><div class="brief ">Queries the source for features.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1586609108%2FFunctions%2F2110661137" anchor-label="setDetached" id="1586609108%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/set-detached.html"><span>set</span><wbr></wbr><span><span>Detached</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1586609108%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/set-detached.html"><span class="token function">setDetached</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1664241413%2FFunctions%2F2110661137" anchor-label="setMaxOverscaleFactorForParentTiles" id="1664241413%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/set-max-overscale-factor-for-parent-tiles.html"><span>set</span><wbr></wbr><span>Max</span><wbr></wbr><span>Overscale</span><wbr></wbr><span>Factor</span><wbr></wbr><span>For</span><wbr></wbr><span>Parent</span><wbr></wbr><span><span>Tiles</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1664241413%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/set-max-overscale-factor-for-parent-tiles.html"><span class="token function">setMaxOverscaleFactorForParentTiles</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a> </span>maxOverscaleFactor<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a></span></span><span class="token punctuation">)</span></div><div class="brief ">When a set of tiles for a current zoom level is being rendered and some of the ideal tiles that cover the screen are not yet loaded, parent tile could be used instead.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1517083750%2FFunctions%2F2110661137" anchor-label="setMinimumTileUpdateInterval" id="-1517083750%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/set-minimum-tile-update-interval.html"><span>set</span><wbr></wbr><span>Minimum</span><wbr></wbr><span>Tile</span><wbr></wbr><span>Update</span><wbr></wbr><span><span>Interval</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1517083750%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/set-minimum-tile-update-interval.html"><span class="token function">setMinimumTileUpdateInterval</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">interval<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Long.html">Long</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Sets the minimum tile update interval, which is used to throttle the tile update network requests.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="881901874%2FFunctions%2F2110661137" anchor-label="setPrefetchZoomDelta" id="881901874%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/set-prefetch-zoom-delta.html"><span>set</span><wbr></wbr><span>Prefetch</span><wbr></wbr><span>Zoom</span><wbr></wbr><span><span>Delta</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="881901874%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/set-prefetch-zoom-delta.html"><span class="token function">setPrefetchZoomDelta</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a> </span>delta<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Set the tile pre-fetching zoom delta for current source.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="655841090%2FFunctions%2F2110661137" anchor-label="setTileData" id="655841090%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-tile-data.html"><span>set</span><wbr></wbr><span>Tile</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="655841090%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-tile-data.html"><span class="token function">setTileData</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">zoomLevel<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">x<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">y<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><span data-unresolved-link="com.mapbox.geojson/FeatureCollection///PointingToDeclaration/">FeatureCollection</span></span></span><span class="token punctuation">)</span></div><div class="brief ">Set or update geometry contents of a specific tile.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="373125508%2FFunctions%2F2110661137" anchor-label="setVolatile" id="373125508%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/set-volatile.html"><span>set</span><wbr></wbr><span><span>Volatile</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="373125508%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/set-volatile.html"><span class="token function">setVolatile</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Set a flag defining whether or not the fetched tiles for the given source should be stored in the local cache</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="425374353%2FProperties%2F2110661137" anchor-label="nativePtr" id="425374353%2FProperties%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/native-ptr.html"><span>native</span><wbr></wbr><span><span>Ptr</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="425374353%2FProperties%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><a data-name="425374353%2FProperties%2F2110661137" anchor-label="nativePtr" id="425374353%2FProperties%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-source/native-ptr.html">nativePtr</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="104635288%2FProperties%2F2110661137" anchor-label="THREAD_POOL_LIMIT" id="104635288%2FProperties%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-t-h-r-e-a-d_-p-o-o-l_-l-i-m-i-t.html"><span><span>THREAD_POOL_LIMIT</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="104635288%2FProperties%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><a data-name="104635288%2FProperties%2F2110661137" anchor-label="THREAD_POOL_LIMIT" id="104635288%2FProperties%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-t-h-r-e-a-d_-p-o-o-l_-l-i-m-i-t.html">THREAD_POOL_LIMIT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">4</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-872005250%2FProperties%2F2110661137" anchor-label="THREAD_PREFIX" id="-872005250%2FProperties%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-t-h-r-e-a-d_-p-r-e-f-i-x.html"><span><span>THREAD_PREFIX</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-872005250%2FProperties%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><a data-name="-872005250%2FProperties%2F2110661137" anchor-label="THREAD_PREFIX" id="-872005250%2FProperties%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-t-h-r-e-a-d_-p-r-e-f-i-x.html">THREAD_PREFIX</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token operator"> = </span><span class="token string">&quot;CustomGeom&quot;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </body>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
 </html>
-

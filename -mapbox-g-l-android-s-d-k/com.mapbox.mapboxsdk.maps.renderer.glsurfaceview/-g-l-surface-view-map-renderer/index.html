@@ -1,263 +1,277 @@
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>GLSurfaceViewMapRenderer</title>
-<link href="../../../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" async="async"></script>  </head>
-  <body>
-    <div id="container">
-      <div id="leftColumn"><a href="../../../index.html">
-          <div id="logo"></div>
-        </a>
-        <div id="paneSearch"></div>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>UnlMapAndroidSDK</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
         <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="UnlMapAndroidSDK::com.mapbox.mapboxsdk.maps.renderer.glsurfaceview/GLSurfaceViewMapRenderer///PointingToDeclaration//2110661137">
+  <div class="breadcrumbs"><a href="../../../index.html">UnlMapAndroidSDK</a><span class="delimiter">/</span><a href="../index.html">com.mapbox.mapboxsdk.maps.renderer.glsurfaceview</a><span class="delimiter">/</span><span class="current">GLSurfaceViewMapRenderer</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>GLSurface</span><wbr></wbr><span>View</span><wbr></wbr><span>Map</span><wbr></wbr><span><span>Renderer</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">GLSurfaceViewMapRenderer</a> : <a href="../../com.mapbox.mapboxsdk.maps.renderer/-map-renderer/index.html">MapRenderer</a>, <a href="https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.Renderer.html">GLSurfaceView.Renderer</a></div><p class="paragraph">The <a href="index.html">GLSurfaceViewMapRenderer</a> encapsulates the GL thread and <a href="https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.html">GLSurfaceView</a> specifics to render the map.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="See also">See also</button></div>
+    <div class="tabs-section-body">
+      <h4 class="">See also</h4>
+      <div data-togglable="See also">
+        <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="See also"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div data-togglable="See also"><div class="table" data-togglable="See also"><div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><a href="../../com.mapbox.mapboxsdk.maps.renderer/-map-renderer/index.html"><span>Map</span><wbr></wbr><span><span>Renderer</span></span></a></div></span></div><div></div></div></div></div></div></div></div>
       </div>
-      <div id="main">
-        <div id="leftToggler"><span class="icon-toggler"></span></div>
-<script type="text/javascript" src="../../../scripts/main.js"></script>        <div class="main-content" id="content" pageIds="MapboxGLAndroidSDK::com.mapbox.mapboxsdk.maps.renderer.glsurfaceview/GLSurfaceViewMapRenderer///PointingToDeclaration//95609766">
-          <div class="navigation-wrapper" id="navigation-wrapper">
-            <div class="breadcrumbs"><a href="../../../index.html">MapboxGLAndroidSDK</a>/<a href="../index.html">com.mapbox.mapboxsdk.maps.renderer.glsurfaceview</a>/<a href="index.html">GLSurfaceViewMapRenderer</a></div>
-            <div class="pull-right d-flex">
-              <div id="searchBar"></div>
-            </div>
-          </div>
-          <div class="cover ">
-            <h1 class="cover"><span>G</span><wbr></wbr><span>L</span><wbr></wbr><span>Surface</span><wbr></wbr><span>View</span><wbr></wbr><span>Map</span><wbr></wbr><span>Renderer</span></h1>
-            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open class <a href="index.html">GLSurfaceViewMapRenderer</a> : <a href="../../com.mapbox.mapboxsdk.maps.renderer/-map-renderer/index.html">MapRenderer</a>, <a href="https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.Renderer.html">GLSurfaceView.Renderer</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">The <a href="index.html">GLSurfaceViewMapRenderer</a> encapsulates the GL thread and <a href="https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.html">GLSurfaceView</a> specifics to render the map.</p></div></div>
-          </div>
-          <div class="tabbedcontent">
-            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="See also">See also</button></div>
-            <div class="tabs-section-body">
-              <h2 class="">See also</h2>
-              <div data-togglable="See also">
-                <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="See also"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div data-togglable="See also"><div class="table" data-togglable="See also"><div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes RowTitle"><div class=""><span class="inline-flex"><a href="../../com.mapbox.mapboxsdk.maps.renderer/-map-renderer/index.html">com.mapbox.mapboxsdk.maps.renderer.MapRenderer</a></span><span class="inline-flex"><div data-togglable="See also"></div></span></div><div></div></div></div></div></div></div></div>
-              </div>
-              <h2 class="tabbedcontent">Constructors</h2>
-              <div class="table" data-togglable="Constructors"><a data-name="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FGLSurfaceViewMapRenderer%2F%23android.content.Context%23com.mapbox.mapboxsdk.maps.renderer.glsurfaceview.MapboxGLSurfaceView%23java.lang.String%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" anchor-label="GLSurfaceViewMapRenderer" id="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FGLSurfaceViewMapRenderer%2F%23android.content.Context%23com.mapbox.mapboxsdk.maps.renderer.glsurfaceview.MapboxGLSurfaceView%23java.lang.String%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-g-l-surface-view-map-renderer.html">GLSurfaceViewMapRenderer</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FGLSurfaceViewMapRenderer%2F%23android.content.Context%23com.mapbox.mapboxsdk.maps.renderer.glsurfaceview.MapboxGLSurfaceView%23java.lang.String%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="-g-l-surface-view-map-renderer.html">GLSurfaceViewMapRenderer</a>(context: <a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a>, glSurfaceView: <a href="../-mapbox-g-l-surface-view/index.html">MapboxGLSurfaceView</a>, localIdeographFontFamily: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h2 class="">Functions</h2>
-              <div class="table" data-togglable="Functions"><a data-name="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonDestroy%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="onDestroy" id="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonDestroy%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="on-destroy.html">onDestroy</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonDestroy%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="on-destroy.html">onDestroy</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bandroid.opengl%2FGLSurfaceView.Renderer%2FonDrawFrame%2F%23javax.microedition.khronos.opengles.GL10%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonDrawFrame%2F%23javax.microedition.khronos.opengles.GL10%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="onDrawFrame" id="%5Bandroid.opengl%2FGLSurfaceView.Renderer%2FonDrawFrame%2F%23javax.microedition.khronos.opengles.GL10%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonDrawFrame%2F%23javax.microedition.khronos.opengles.GL10%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#%5Bandroid.opengl%2FGLSurfaceView.Renderer%2FonDrawFrame%2F%23javax.microedition.khronos.opengles.GL10%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766">onDrawFrame</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bandroid.opengl%2FGLSurfaceView.Renderer%2FonDrawFrame%2F%23javax.microedition.khronos.opengles.GL10%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonDrawFrame%2F%23javax.microedition.khronos.opengles.GL10%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">abstract fun <a href="index.html#%5Bandroid.opengl%2FGLSurfaceView.Renderer%2FonDrawFrame%2F%23javax.microedition.khronos.opengles.GL10%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766">onDrawFrame</a>(p: <a href="https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL10.html">GL10</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace">open fun <a href="on-draw-frame.html">onDrawFrame</a>(gl: <a href="https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL10.html">GL10</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonPause%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="onPause" id="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonPause%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="on-pause.html">onPause</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonPause%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="on-pause.html">onPause</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonResume%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="onResume" id="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonResume%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="on-resume.html">onResume</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonResume%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="on-resume.html">onResume</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonStart%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="onStart" id="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonStart%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="on-start.html">onStart</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonStart%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="on-start.html">onStart</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonStop%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="onStop" id="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonStop%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="on-stop.html">onStop</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonStop%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="on-stop.html">onStop</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bandroid.opengl%2FGLSurfaceView.Renderer%2FonSurfaceChanged%2F%23javax.microedition.khronos.opengles.GL10%23int%23int%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonSurfaceChanged%2F%23javax.microedition.khronos.opengles.GL10%23int%23int%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="onSurfaceChanged" id="%5Bandroid.opengl%2FGLSurfaceView.Renderer%2FonSurfaceChanged%2F%23javax.microedition.khronos.opengles.GL10%23int%23int%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonSurfaceChanged%2F%23javax.microedition.khronos.opengles.GL10%23int%23int%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#%5Bandroid.opengl%2FGLSurfaceView.Renderer%2FonSurfaceChanged%2F%23javax.microedition.khronos.opengles.GL10%23int%23int%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766">onSurfaceChanged</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bandroid.opengl%2FGLSurfaceView.Renderer%2FonSurfaceChanged%2F%23javax.microedition.khronos.opengles.GL10%23int%23int%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonSurfaceChanged%2F%23javax.microedition.khronos.opengles.GL10%23int%23int%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">abstract fun <a href="index.html#%5Bandroid.opengl%2FGLSurfaceView.Renderer%2FonSurfaceChanged%2F%23javax.microedition.khronos.opengles.GL10%23int%23int%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766">onSurfaceChanged</a>(p: <a href="https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL10.html">GL10</a>, p1: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, p2: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace">open fun <a href="on-surface-changed.html">onSurfaceChanged</a>(gl: <a href="https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL10.html">GL10</a>, width: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, height: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bandroid.opengl%2FGLSurfaceView.Renderer%2FonSurfaceCreated%2F%23javax.microedition.khronos.opengles.GL10%23javax.microedition.khronos.egl.EGLConfig%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonSurfaceCreated%2F%23javax.microedition.khronos.opengles.GL10%23javax.microedition.khronos.egl.EGLConfig%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="onSurfaceCreated" id="%5Bandroid.opengl%2FGLSurfaceView.Renderer%2FonSurfaceCreated%2F%23javax.microedition.khronos.opengles.GL10%23javax.microedition.khronos.egl.EGLConfig%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonSurfaceCreated%2F%23javax.microedition.khronos.opengles.GL10%23javax.microedition.khronos.egl.EGLConfig%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#%5Bandroid.opengl%2FGLSurfaceView.Renderer%2FonSurfaceCreated%2F%23javax.microedition.khronos.opengles.GL10%23javax.microedition.khronos.egl.EGLConfig%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766">onSurfaceCreated</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bandroid.opengl%2FGLSurfaceView.Renderer%2FonSurfaceCreated%2F%23javax.microedition.khronos.opengles.GL10%23javax.microedition.khronos.egl.EGLConfig%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FonSurfaceCreated%2F%23javax.microedition.khronos.opengles.GL10%23javax.microedition.khronos.egl.EGLConfig%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">abstract fun <a href="index.html#%5Bandroid.opengl%2FGLSurfaceView.Renderer%2FonSurfaceCreated%2F%23javax.microedition.khronos.opengles.GL10%23javax.microedition.khronos.egl.EGLConfig%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766">onSurfaceCreated</a>(p: <a href="https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL10.html">GL10</a>, p1: <a href="https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLConfig.html">EGLConfig</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace">open fun <a href="on-surface-created.html">onSurfaceCreated</a>(gl: <a href="https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL10.html">GL10</a>, config: <a href="https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLConfig.html">EGLConfig</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FqueueEvent%2F%23java.lang.Runnable%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="queueEvent" id="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FqueueEvent%2F%23java.lang.Runnable%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="queue-event.html">queueEvent</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FqueueEvent%2F%23java.lang.Runnable%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="queue-event.html">queueEvent</a>(runnable: <a href="https://developer.android.com/reference/kotlin/java/lang/Runnable.html">Runnable</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FqueueEvent%2F%23java.lang.Runnable%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="queueEvent" id="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FqueueEvent%2F%23java.lang.Runnable%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FqueueEvent%2F%23java.lang.Runnable%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="queueEvent" id="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FqueueEvent%2F%23java.lang.Runnable%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>May be called from any thread.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FrequestRender%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="requestRender" id="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FrequestRender%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="request-render.html">requestRender</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FrequestRender%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="request-render.html">requestRender</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FrequestRender%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="requestRender" id="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FrequestRender%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FrequestRender%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="requestRender" id="%5Bcom.mapbox.mapboxsdk.maps.renderer.glsurfaceview%2FGLSurfaceViewMapRenderer%2FrequestRender%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>May be called from any thread.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.maps.renderer%2FMapRenderer%2FsetMaximumFps%2F%23int%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setMaximumFps" id="%5Bcom.mapbox.mapboxsdk.maps.renderer%2FMapRenderer%2FsetMaximumFps%2F%23int%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../../com.mapbox.mapboxsdk.maps.renderer/-map-renderer/set-maximum-fps.html">setMaximumFps</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.maps.renderer%2FMapRenderer%2FsetMaximumFps%2F%23int%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="../../com.mapbox.mapboxsdk.maps.renderer/-map-renderer/set-maximum-fps.html">setMaximumFps</a>(maximumFps: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.maps.renderer%2FMapRenderer%2FsetMaximumFps%2F%23int%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setMaximumFps" id="%5Bcom.mapbox.mapboxsdk.maps.renderer%2FMapRenderer%2FsetMaximumFps%2F%23int%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.maps.renderer%2FMapRenderer%2FsetMaximumFps%2F%23int%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setMaximumFps" id="%5Bcom.mapbox.mapboxsdk.maps.renderer%2FMapRenderer%2FsetMaximumFps%2F%23int%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>The max frame rate at which this render is rendered,but it can't excess the ability of device hardware.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.maps.renderer%2FMapRenderer%2FsetOnFpsChangedListener%2F%23com.mapbox.mapboxsdk.maps.MapboxMap.OnFpsChangedListener%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setOnFpsChangedListener" id="%5Bcom.mapbox.mapboxsdk.maps.renderer%2FMapRenderer%2FsetOnFpsChangedListener%2F%23com.mapbox.mapboxsdk.maps.MapboxMap.OnFpsChangedListener%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../../com.mapbox.mapboxsdk.maps.renderer.textureview/-texture-view-map-renderer/index.html#%5Bcom.mapbox.mapboxsdk.maps.renderer%2FMapRenderer%2FsetOnFpsChangedListener%2F%23com.mapbox.mapboxsdk.maps.MapboxMap.OnFpsChangedListener%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766">setOnFpsChangedListener</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.maps.renderer%2FMapRenderer%2FsetOnFpsChangedListener%2F%23com.mapbox.mapboxsdk.maps.MapboxMap.OnFpsChangedListener%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="../../com.mapbox.mapboxsdk.maps.renderer.textureview/-texture-view-map-renderer/index.html#%5Bcom.mapbox.mapboxsdk.maps.renderer%2FMapRenderer%2FsetOnFpsChangedListener%2F%23com.mapbox.mapboxsdk.maps.MapboxMap.OnFpsChangedListener%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766">setOnFpsChangedListener</a>(listener: <a href="../../com.mapbox.mapboxsdk.maps/-mapbox-map/-on-fps-changed-listener/index.html">MapboxMap.OnFpsChangedListener</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="-1492438307%2FConstructors%2F2110661137" anchor-label="GLSurfaceViewMapRenderer" id="-1492438307%2FConstructors%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-g-l-surface-view-map-renderer.html"><span>GLSurface</span><wbr></wbr><span>View</span><wbr></wbr><span>Map</span><wbr></wbr><span><span>Renderer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1492438307%2FConstructors%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="-g-l-surface-view-map-renderer.html"><span class="token function">GLSurfaceViewMapRenderer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">glSurfaceView<span class="token operator">: </span><a href="../-mapbox-g-l-surface-view/index.html">MapboxGLSurfaceView</a><span class="token punctuation">, </span></span><span class="parameter ">localIdeographFontFamily<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-2051020140%2FFunctions%2F2110661137" anchor-label="onDestroy" id="-2051020140%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="on-destroy.html"><span>on</span><wbr></wbr><span><span>Destroy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2051020140%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-destroy.html"><span class="token function">onDestroy</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="474838306%2FFunctions%2F2110661137" anchor-label="onDrawFrame" id="474838306%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="on-draw-frame.html"><span>on</span><wbr></wbr><span>Draw</span><wbr></wbr><span><span>Frame</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="474838306%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-draw-frame.html"><span class="token function">onDrawFrame</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">gl<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL10.html">GL10</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-311162792%2FFunctions%2F2110661137" anchor-label="onPause" id="-311162792%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="on-pause.html"><span>on</span><wbr></wbr><span><span>Pause</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-311162792%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-pause.html"><span class="token function">onPause</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1969969025%2FFunctions%2F2110661137" anchor-label="onResume" id="-1969969025%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="on-resume.html"><span>on</span><wbr></wbr><span><span>Resume</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1969969025%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-resume.html"><span class="token function">onResume</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="310262636%2FFunctions%2F2110661137" anchor-label="onStart" id="310262636%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="on-start.html"><span>on</span><wbr></wbr><span><span>Start</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="310262636%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-start.html"><span class="token function">onStart</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1443969546%2FFunctions%2F2110661137" anchor-label="onStop" id="1443969546%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="on-stop.html"><span>on</span><wbr></wbr><span><span>Stop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1443969546%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-stop.html"><span class="token function">onStop</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-999336886%2FFunctions%2F2110661137" anchor-label="onSurfaceChanged" id="-999336886%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="on-surface-changed.html"><span>on</span><wbr></wbr><span>Surface</span><wbr></wbr><span><span>Changed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-999336886%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-surface-changed.html"><span class="token function">onSurfaceChanged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">gl<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL10.html">GL10</a><span class="token punctuation">, </span></span><span class="parameter ">width<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">height<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-757856389%2FFunctions%2F2110661137" anchor-label="onSurfaceCreated" id="-757856389%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="on-surface-created.html"><span>on</span><wbr></wbr><span>Surface</span><wbr></wbr><span><span>Created</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-757856389%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-surface-created.html"><span class="token function">onSurfaceCreated</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">gl<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL10.html">GL10</a><span class="token punctuation">, </span></span><span class="parameter ">config<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLConfig.html">EGLConfig</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="803595441%2FFunctions%2F2110661137" anchor-label="queueEvent" id="803595441%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="queue-event.html"><span>queue</span><wbr></wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="803595441%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="queue-event.html"><span class="token function">queueEvent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">runnable<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Runnable.html">Runnable</a></span></span><span class="token punctuation">)</span></div><div class="brief ">May be called from any thread.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1737845526%2FFunctions%2F2110661137" anchor-label="requestRender" id="-1737845526%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="request-render.html"><span>request</span><wbr></wbr><span><span>Render</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1737845526%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="request-render.html"><span class="token function">requestRender</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">May be called from any thread.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1315866695%2FFunctions%2F2110661137" anchor-label="setMaximumFps" id="1315866695%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.mapbox.mapboxsdk.maps.renderer/-map-renderer/set-maximum-fps.html"><span>set</span><wbr></wbr><span>Maximum</span><wbr></wbr><span><span>Fps</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1315866695%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.mapbox.mapboxsdk.maps.renderer/-map-renderer/set-maximum-fps.html"><span class="token function">setMaximumFps</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">maximumFps<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief ">The max frame rate at which this render is rendered, but it can't excess the ability of device hardware.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1752360758%2FFunctions%2F2110661137" anchor-label="setOnFpsChangedListener" id="1752360758%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.mapbox.mapboxsdk.maps.renderer/-map-renderer/set-on-fps-changed-listener.html"><span>set</span><wbr></wbr><span>On</span><wbr></wbr><span>Fps</span><wbr></wbr><span>Changed</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1752360758%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.mapbox.mapboxsdk.maps.renderer/-map-renderer/set-on-fps-changed-listener.html"><span class="token function">setOnFpsChangedListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.mapbox.mapboxsdk.maps/-mapbox-map/-on-fps-changed-listener/index.html">MapboxMap.OnFpsChangedListener</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </body>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
 </html>
-

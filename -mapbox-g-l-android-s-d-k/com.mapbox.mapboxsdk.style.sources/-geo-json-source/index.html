@@ -1,615 +1,609 @@
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>GeoJsonSource</title>
-<link href="../../../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" async="async"></script>  </head>
-  <body>
-    <div id="container">
-      <div id="leftColumn"><a href="../../../index.html">
-          <div id="logo"></div>
-        </a>
-        <div id="paneSearch"></div>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>UnlMapAndroidSDK</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
         <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="UnlMapAndroidSDK::com.mapbox.mapboxsdk.style.sources/GeoJsonSource///PointingToDeclaration//2110661137">
+  <div class="breadcrumbs"><a href="../../../index.html">UnlMapAndroidSDK</a><span class="delimiter">/</span><a href="../index.html">com.mapbox.mapboxsdk.style.sources</a><span class="delimiter">/</span><span class="current">GeoJsonSource</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Geo</span><wbr></wbr><span>Json</span><wbr></wbr><span><span>Source</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/UiThread.html"><span class="token annotation builtin">UiThread</span></a></div></div><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">GeoJsonSource</a> : <a href="../-source/index.html">Source</a></div><p class="paragraph">GeoJson source, allows using FeatureCollections from Json.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="See also">See also</button></div>
+    <div class="tabs-section-body">
+      <h4 class="">See also</h4>
+      <div data-togglable="See also">
+        <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="See also"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div data-togglable="See also"><div class="table" data-togglable="See also"><div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>&lt;a</span></span> <span>href=&quot;https://www.</span><wbr></wbr><span>mapbox.</span><wbr></wbr><span><span>com/mapbox-gl-style-spec/#sources-geojson&quot;&gt;the</span></span> <span><span>style</span></span> <span><span>specification&lt;/a&gt;</span></span></div></span></div><div></div></div></div></div></div></div></div>
       </div>
-      <div id="main">
-        <div id="leftToggler"><span class="icon-toggler"></span></div>
-<script type="text/javascript" src="../../../scripts/main.js"></script>        <div class="main-content" id="content" pageIds="MapboxGLAndroidSDK::com.mapbox.mapboxsdk.style.sources/GeoJsonSource///PointingToDeclaration//95609766">
-          <div class="navigation-wrapper" id="navigation-wrapper">
-            <div class="breadcrumbs"><a href="../../../index.html">MapboxGLAndroidSDK</a>/<a href="../index.html">com.mapbox.mapboxsdk.style.sources</a>/<a href="index.html">GeoJsonSource</a></div>
-            <div class="pull-right d-flex">
-              <div id="searchBar"></div>
-            </div>
-          </div>
-          <div class="cover ">
-            <h1 class="cover"><span>Geo</span><wbr></wbr><span>Json</span><wbr></wbr><span>Source</span></h1>
-            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/UiThread.html">UiThread</a>()</div></div>open class <a href="index.html">GeoJsonSource</a> : <a href="../-source/index.html">Source</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">GeoJson source, allows using FeatureCollections from Json.</p></div></div>
-          </div>
-          <div class="tabbedcontent">
-            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="See also">See also</button></div>
-            <div class="tabs-section-body">
-              <h2 class="">See also</h2>
-              <div data-togglable="See also">
-                <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="See also"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div data-togglable="See also"><div class="table" data-togglable="See also"><div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes RowTitle"><div class=""><span class="inline-flex">&lt;a href=&quot;https://www.mapbox.com/mapbox-gl-style-spec/#sources-geojson&quot;&gt;the style specification&lt;/a&gt;</span><span class="inline-flex"><div data-togglable="See also"><p class="paragraph"><a href="https://www.mapbox.com/mapbox-gl-style-spec/#sources-geojson">the style specification</a></p></div></span></div><div></div></div></div></div></div></div></div>
-              </div>
-              <h2 class="tabbedcontent">Constructors</h2>
-              <div class="table" data-togglable="Constructors"><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" anchor-label="GeoJsonSource" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-geo-json-source.html">GeoJsonSource</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="-geo-json-source.html">GeoJsonSource</a>(id: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">Create an empty GeoJsonSource</div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23com.mapbox.mapboxsdk.style.sources.GeoJsonOptions%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" anchor-label="GeoJsonSource" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23com.mapbox.mapboxsdk.style.sources.GeoJsonOptions%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-geo-json-source.html">GeoJsonSource</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23com.mapbox.mapboxsdk.style.sources.GeoJsonOptions%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="-geo-json-source.html">GeoJsonSource</a>(id: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>, options: <a href="../-geo-json-options/index.html">GeoJsonOptions</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">Create an empty GeoJsonSource with non-default GeoJsonOptions.</div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23java.lang.String%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" anchor-label="GeoJsonSource" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23java.lang.String%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-geo-json-source.html">GeoJsonSource</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23java.lang.String%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="-geo-json-source.html">GeoJsonSource</a>(id: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>, <span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>() </span>geoJson: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">Create a GeoJsonSource from a raw json string</div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23java.lang.String%23com.mapbox.mapboxsdk.style.sources.GeoJsonOptions%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" anchor-label="GeoJsonSource" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23java.lang.String%23com.mapbox.mapboxsdk.style.sources.GeoJsonOptions%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-geo-json-source.html">GeoJsonSource</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23java.lang.String%23com.mapbox.mapboxsdk.style.sources.GeoJsonOptions%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="-geo-json-source.html">GeoJsonSource</a>(id: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>, <span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>() </span>geoJson: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>, options: <a href="../-geo-json-options/index.html">GeoJsonOptions</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">Create a GeoJsonSource from a raw json string and non-default GeoJsonOptions</div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23java.net.URL%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" anchor-label="GeoJsonSource" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23java.net.URL%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-geo-json-source.html">GeoJsonSource</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23java.net.URL%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace strikethrough"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/java/lang/Deprecated.html">Deprecated</a>()</div></div>open fun <a href="-geo-json-source.html">GeoJsonSource</a>(id: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>, url: <a href="https://developer.android.com/reference/kotlin/java/net/URL.html">URL</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">Create a GeoJsonSource from a remote geo json file</div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23java.net.URL%23com.mapbox.mapboxsdk.style.sources.GeoJsonOptions%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" anchor-label="GeoJsonSource" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23java.net.URL%23com.mapbox.mapboxsdk.style.sources.GeoJsonOptions%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-geo-json-source.html">GeoJsonSource</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23java.net.URL%23com.mapbox.mapboxsdk.style.sources.GeoJsonOptions%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace strikethrough"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/java/lang/Deprecated.html">Deprecated</a>()</div></div>open fun <a href="-geo-json-source.html">GeoJsonSource</a>(id: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>, url: <a href="https://developer.android.com/reference/kotlin/java/net/URL.html">URL</a>, options: <a href="../-geo-json-options/index.html">GeoJsonOptions</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">Create a GeoJsonSource from a remote geo json file and non-default GeoJsonOptions</div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23java.net.URI%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" anchor-label="GeoJsonSource" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23java.net.URI%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-geo-json-source.html">GeoJsonSource</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23java.net.URI%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="-geo-json-source.html">GeoJsonSource</a>(id: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>, uri: <a href="https://developer.android.com/reference/kotlin/java/net/URI.html">URI</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">Create a GeoJsonSource from a geo json URIAn URI is a combination of a protocol and a resource path.</div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23java.net.URI%23com.mapbox.mapboxsdk.style.sources.GeoJsonOptions%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" anchor-label="GeoJsonSource" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23java.net.URI%23com.mapbox.mapboxsdk.style.sources.GeoJsonOptions%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-geo-json-source.html">GeoJsonSource</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23java.net.URI%23com.mapbox.mapboxsdk.style.sources.GeoJsonOptions%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="-geo-json-source.html">GeoJsonSource</a>(id: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>, uri: <a href="https://developer.android.com/reference/kotlin/java/net/URI.html">URI</a>, options: <a href="../-geo-json-options/index.html">GeoJsonOptions</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">Create a GeoJsonSource from a geo json URI and non-default GeoJsonOptionsAn URI is a combination of a protocol and a resource path.</div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23com.mapbox.geojson.FeatureCollection%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" anchor-label="GeoJsonSource" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23com.mapbox.geojson.FeatureCollection%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-geo-json-source.html">GeoJsonSource</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23com.mapbox.geojson.FeatureCollection%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="-geo-json-source.html">GeoJsonSource</a>(id: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>, features: <span data-unresolved-link="com.mapbox.geojson/FeatureCollection///PointingToDeclaration/">FeatureCollection</span>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">Create a GeoJsonSource from a FeatureCollection.</div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23com.mapbox.geojson.FeatureCollection%23com.mapbox.mapboxsdk.style.sources.GeoJsonOptions%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" anchor-label="GeoJsonSource" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23com.mapbox.geojson.FeatureCollection%23com.mapbox.mapboxsdk.style.sources.GeoJsonOptions%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-geo-json-source.html">GeoJsonSource</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23com.mapbox.geojson.FeatureCollection%23com.mapbox.mapboxsdk.style.sources.GeoJsonOptions%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="-geo-json-source.html">GeoJsonSource</a>(id: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>, features: <span data-unresolved-link="com.mapbox.geojson/FeatureCollection///PointingToDeclaration/">FeatureCollection</span>, options: <a href="../-geo-json-options/index.html">GeoJsonOptions</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">Create a GeoJsonSource from a FeatureCollection and non-default GeoJsonOptions.</div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" anchor-label="GeoJsonSource" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-geo-json-source.html">GeoJsonSource</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="-geo-json-source.html">GeoJsonSource</a>(id: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>, feature: <span data-unresolved-link="com.mapbox.geojson/Feature///PointingToDeclaration/">Feature</span>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">Create a GeoJsonSource from a <span data-unresolved-link="com.mapbox.geojson/Feature///PointingToDeclaration/">Feature</span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23com.mapbox.geojson.Feature%23com.mapbox.mapboxsdk.style.sources.GeoJsonOptions%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" anchor-label="GeoJsonSource" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23com.mapbox.geojson.Feature%23com.mapbox.mapboxsdk.style.sources.GeoJsonOptions%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-geo-json-source.html">GeoJsonSource</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23com.mapbox.geojson.Feature%23com.mapbox.mapboxsdk.style.sources.GeoJsonOptions%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="-geo-json-source.html">GeoJsonSource</a>(id: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>, feature: <span data-unresolved-link="com.mapbox.geojson/Feature///PointingToDeclaration/">Feature</span>, options: <a href="../-geo-json-options/index.html">GeoJsonOptions</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">Create a GeoJsonSource from a <span data-unresolved-link="com.mapbox.geojson/Feature///PointingToDeclaration/">Feature</span> and non-default <a href="../-geo-json-options/index.html">GeoJsonOptions</a></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23com.mapbox.geojson.Geometry%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" anchor-label="GeoJsonSource" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23com.mapbox.geojson.Geometry%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-geo-json-source.html">GeoJsonSource</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23com.mapbox.geojson.Geometry%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="-geo-json-source.html">GeoJsonSource</a>(id: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>, geometry: <span data-unresolved-link="com.mapbox.geojson/Geometry///PointingToDeclaration/">Geometry</span>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">Create a GeoJsonSource from a <span data-unresolved-link="com.mapbox.geojson/Geometry///PointingToDeclaration/">Geometry</span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23com.mapbox.geojson.Geometry%23com.mapbox.mapboxsdk.style.sources.GeoJsonOptions%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" anchor-label="GeoJsonSource" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23com.mapbox.geojson.Geometry%23com.mapbox.mapboxsdk.style.sources.GeoJsonOptions%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-geo-json-source.html">GeoJsonSource</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FGeoJsonSource%2F%23java.lang.String%23com.mapbox.geojson.Geometry%23com.mapbox.mapboxsdk.style.sources.GeoJsonOptions%2FPointingToDeclaration%2F%5D%2FConstructors%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="-geo-json-source.html">GeoJsonSource</a>(id: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>, geometry: <span data-unresolved-link="com.mapbox.geojson/Geometry///PointingToDeclaration/">Geometry</span>, options: <a href="../-geo-json-options/index.html">GeoJsonOptions</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">Create a GeoJsonSource from a <span data-unresolved-link="com.mapbox.geojson/Geometry///PointingToDeclaration/">Geometry</span> and non-default <a href="../-geo-json-options/index.html">GeoJsonOptions</a></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h2 class="">Functions</h2>
-              <div class="table" data-togglable="Functions"><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetAttribution%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getAttribution" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetAttribution%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-source/get-attribution.html">getAttribution</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetAttribution%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()</div></div>open fun <a href="../-source/get-attribution.html">getAttribution</a>(): <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetAttribution%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getAttribution" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetAttribution%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetAttribution%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getAttribution" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetAttribution%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Retrieve the source attribution.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetClusterChildren%2F%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getClusterChildren" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetClusterChildren%2F%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-cluster-children.html">getClusterChildren</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetClusterChildren%2F%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()</div></div>open fun <a href="get-cluster-children.html">getClusterChildren</a>(<span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>() </span>cluster: <span data-unresolved-link="com.mapbox.geojson/Feature///PointingToDeclaration/">Feature</span>): <span data-unresolved-link="com.mapbox.geojson/FeatureCollection///PointingToDeclaration/">FeatureCollection</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetClusterChildren%2F%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getClusterChildren" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetClusterChildren%2F%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetClusterChildren%2F%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getClusterChildren" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetClusterChildren%2F%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Returns the children of a cluster (on the next zoom level) given its id (cluster_id value from feature properties).</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetClusterExpansionZoom%2F%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getClusterExpansionZoom" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetClusterExpansionZoom%2F%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-cluster-expansion-zoom.html">getClusterExpansionZoom</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetClusterExpansionZoom%2F%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="get-cluster-expansion-zoom.html">getClusterExpansionZoom</a>(<span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>() </span>cluster: <span data-unresolved-link="com.mapbox.geojson/Feature///PointingToDeclaration/">Feature</span>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetClusterExpansionZoom%2F%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getClusterExpansionZoom" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetClusterExpansionZoom%2F%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetClusterExpansionZoom%2F%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getClusterExpansionZoom" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetClusterExpansionZoom%2F%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Returns the zoom on which the cluster expands into several children (useful for &quot;click to zoom&quot; feature)given the cluster's cluster_id (cluster_id value from feature properties).</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetClusterLeaves%2F%23com.mapbox.geojson.Feature%23long%23long%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getClusterLeaves" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetClusterLeaves%2F%23com.mapbox.geojson.Feature%23long%23long%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-cluster-leaves.html">getClusterLeaves</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetClusterLeaves%2F%23com.mapbox.geojson.Feature%23long%23long%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()</div></div>open fun <a href="get-cluster-leaves.html">getClusterLeaves</a>(<span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>() </span>cluster: <span data-unresolved-link="com.mapbox.geojson/Feature///PointingToDeclaration/">Feature</span>, limit: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>, offset: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>): <span data-unresolved-link="com.mapbox.geojson/FeatureCollection///PointingToDeclaration/">FeatureCollection</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetClusterLeaves%2F%23com.mapbox.geojson.Feature%23long%23long%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getClusterLeaves" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetClusterLeaves%2F%23com.mapbox.geojson.Feature%23long%23long%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetClusterLeaves%2F%23com.mapbox.geojson.Feature%23long%23long%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getClusterLeaves" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetClusterLeaves%2F%23com.mapbox.geojson.Feature%23long%23long%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Returns all the leaves of a cluster (given its cluster_id), with pagination support: limit is the number of leavesto return (set to Infinity for all points), and offset is the amount of points to skip (for pagination).</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetId%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getId" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetId%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-source/get-id.html">getId</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetId%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()</div></div>open fun <a href="../-source/get-id.html">getId</a>(): <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetId%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getId" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetId%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetId%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getId" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetId%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Retrieve the source id</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMaxOverscaleFactorForParentTiles%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getMaxOverscaleFactorForParentTiles" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMaxOverscaleFactorForParentTiles%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-source/get-max-overscale-factor-for-parent-tiles.html">getMaxOverscaleFactorForParentTiles</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMaxOverscaleFactorForParentTiles%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()</div></div>open fun <a href="../-source/get-max-overscale-factor-for-parent-tiles.html">getMaxOverscaleFactorForParentTiles</a>(): <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMaxOverscaleFactorForParentTiles%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getMaxOverscaleFactorForParentTiles" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMaxOverscaleFactorForParentTiles%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMaxOverscaleFactorForParentTiles%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getMaxOverscaleFactorForParentTiles" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMaxOverscaleFactorForParentTiles%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Retrieve current maximum overscale factor for parent tiles.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMinimumTileUpdateInterval%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getMinimumTileUpdateInterval" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMinimumTileUpdateInterval%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-source/get-minimum-tile-update-interval.html">getMinimumTileUpdateInterval</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMinimumTileUpdateInterval%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()</div></div>open fun <a href="../-source/get-minimum-tile-update-interval.html">getMinimumTileUpdateInterval</a>(): <a href="https://developer.android.com/reference/kotlin/java/lang/Long.html">Long</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMinimumTileUpdateInterval%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getMinimumTileUpdateInterval" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMinimumTileUpdateInterval%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMinimumTileUpdateInterval%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getMinimumTileUpdateInterval" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetMinimumTileUpdateInterval%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Retrieve the minimum tile update interval, which is used to throttle the tile update network requests.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetNativePtr%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getNativePtr" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetNativePtr%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-vector-source/index.html#%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetNativePtr%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766">getNativePtr</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetNativePtr%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="../-vector-source/index.html#%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetNativePtr%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766">getNativePtr</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetNativePtr%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getNativePtr" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetNativePtr%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetNativePtr%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getNativePtr" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetNativePtr%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Internal use</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetPrefetchZoomDelta%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getPrefetchZoomDelta" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetPrefetchZoomDelta%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-source/get-prefetch-zoom-delta.html">getPrefetchZoomDelta</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetPrefetchZoomDelta%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()</div></div>open fun <a href="../-source/get-prefetch-zoom-delta.html">getPrefetchZoomDelta</a>(): <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetPrefetchZoomDelta%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getPrefetchZoomDelta" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetPrefetchZoomDelta%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetPrefetchZoomDelta%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getPrefetchZoomDelta" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FgetPrefetchZoomDelta%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Retrieve current pre-fetching zoom delta.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetUri%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getUri" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetUri%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-uri.html">getUri</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetUri%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()</div></div>open fun <a href="get-uri.html">getUri</a>(): <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetUri%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getUri" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetUri%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetUri%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getUri" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetUri%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Get the URI of the source.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetUrl%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getUrl" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetUrl%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-url.html">getUrl</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetUrl%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()</div></div>open fun <a href="get-url.html">getUrl</a>(): <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetUrl%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getUrl" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetUrl%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetUrl%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="getUrl" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FgetUrl%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>The url or null</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FisVolatile%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="isVolatile" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FisVolatile%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-source/is-volatile.html">isVolatile</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FisVolatile%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()</div></div>open fun <a href="../-source/is-volatile.html">isVolatile</a>(): <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FisVolatile%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="isVolatile" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FisVolatile%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FisVolatile%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="isVolatile" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FisVolatile%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Retrieve whether or not the fetched tiles for the given source should be stored in the local cache</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FquerySourceFeatures%2F%23com.mapbox.mapboxsdk.style.expressions.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="querySourceFeatures" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FquerySourceFeatures%2F%23com.mapbox.mapboxsdk.style.expressions.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="query-source-features.html">querySourceFeatures</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FquerySourceFeatures%2F%23com.mapbox.mapboxsdk.style.expressions.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()</div></div>open fun <a href="query-source-features.html">querySourceFeatures</a>(<span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>() </span>filter: <a href="../../com.mapbox.mapboxsdk.style.expressions/-expression/index.html">Expression</a>): <a href="https://developer.android.com/reference/kotlin/java/util/List.html">List</a>&lt;<span data-unresolved-link="com.mapbox.geojson/Feature///PointingToDeclaration/">Feature</span>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FquerySourceFeatures%2F%23com.mapbox.mapboxsdk.style.expressions.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="querySourceFeatures" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FquerySourceFeatures%2F%23com.mapbox.mapboxsdk.style.expressions.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FquerySourceFeatures%2F%23com.mapbox.mapboxsdk.style.expressions.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="querySourceFeatures" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FquerySourceFeatures%2F%23com.mapbox.mapboxsdk.style.expressions.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Queries the source for features.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetDetached%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setDetached" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetDetached%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-vector-source/index.html#%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetDetached%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766">setDetached</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetDetached%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="../-vector-source/index.html#%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetDetached%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766">setDetached</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23com.mapbox.geojson.FeatureCollection%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23com.mapbox.geojson.Geometry%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23java.lang.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setGeoJson" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23com.mapbox.geojson.FeatureCollection%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23com.mapbox.geojson.Geometry%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23java.lang.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="set-geo-json.html">setGeoJson</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23com.mapbox.geojson.FeatureCollection%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23com.mapbox.geojson.Geometry%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23java.lang.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="set-geo-json.html">setGeoJson</a>(feature: <span data-unresolved-link="com.mapbox.geojson/Feature///PointingToDeclaration/">Feature</span>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setGeoJson" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setGeoJson" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23com.mapbox.geojson.Feature%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Updates the GeoJson with a single feature.</div></div>
-<div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="set-geo-json.html">setGeoJson</a>(<span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>() </span>featureCollection: <span data-unresolved-link="com.mapbox.geojson/FeatureCollection///PointingToDeclaration/">FeatureCollection</span>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23com.mapbox.geojson.FeatureCollection%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setGeoJson" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23com.mapbox.geojson.FeatureCollection%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23com.mapbox.geojson.FeatureCollection%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setGeoJson" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23com.mapbox.geojson.FeatureCollection%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Updates the GeoJson.</div></div>
-<div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="set-geo-json.html">setGeoJson</a>(geometry: <span data-unresolved-link="com.mapbox.geojson/Geometry///PointingToDeclaration/">Geometry</span>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23com.mapbox.geojson.Geometry%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setGeoJson" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23com.mapbox.geojson.Geometry%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23com.mapbox.geojson.Geometry%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setGeoJson" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23com.mapbox.geojson.Geometry%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Updates the GeoJson with a single geometry.</div></div>
-<div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="set-geo-json.html">setGeoJson</a>(json: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23java.lang.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setGeoJson" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23java.lang.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23java.lang.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setGeoJson" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetGeoJson%2F%23java.lang.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Updates the GeoJson.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMaxOverscaleFactorForParentTiles%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setMaxOverscaleFactorForParentTiles" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMaxOverscaleFactorForParentTiles%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-source/set-max-overscale-factor-for-parent-tiles.html">setMaxOverscaleFactorForParentTiles</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMaxOverscaleFactorForParentTiles%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="../-source/set-max-overscale-factor-for-parent-tiles.html">setMaxOverscaleFactorForParentTiles</a>(<span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>() </span>maxOverscaleFactor: <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMaxOverscaleFactorForParentTiles%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setMaxOverscaleFactorForParentTiles" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMaxOverscaleFactorForParentTiles%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMaxOverscaleFactorForParentTiles%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setMaxOverscaleFactorForParentTiles" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMaxOverscaleFactorForParentTiles%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>When a set of tiles for a current zoom level is being rendered and some of theideal tiles that cover the screen are not yet loaded, parent tile could beused instead.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMinimumTileUpdateInterval%2F%23java.lang.Long%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setMinimumTileUpdateInterval" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMinimumTileUpdateInterval%2F%23java.lang.Long%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-source/set-minimum-tile-update-interval.html">setMinimumTileUpdateInterval</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMinimumTileUpdateInterval%2F%23java.lang.Long%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="../-source/set-minimum-tile-update-interval.html">setMinimumTileUpdateInterval</a>(interval: <a href="https://developer.android.com/reference/kotlin/java/lang/Long.html">Long</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMinimumTileUpdateInterval%2F%23java.lang.Long%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setMinimumTileUpdateInterval" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMinimumTileUpdateInterval%2F%23java.lang.Long%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMinimumTileUpdateInterval%2F%23java.lang.Long%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setMinimumTileUpdateInterval" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetMinimumTileUpdateInterval%2F%23java.lang.Long%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Sets the minimum tile update interval, which is used to throttle the tile update network requests.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetPrefetchZoomDelta%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setPrefetchZoomDelta" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetPrefetchZoomDelta%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-source/set-prefetch-zoom-delta.html">setPrefetchZoomDelta</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetPrefetchZoomDelta%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="../-source/set-prefetch-zoom-delta.html">setPrefetchZoomDelta</a>(<span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>() </span>delta: <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetPrefetchZoomDelta%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setPrefetchZoomDelta" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetPrefetchZoomDelta%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetPrefetchZoomDelta%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setPrefetchZoomDelta" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetPrefetchZoomDelta%2F%23java.lang.Integer%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Set the tile pre-fetching zoom delta for current source.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUri%2F%23java.lang.String%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUri%2F%23java.net.URI%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setUri" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUri%2F%23java.lang.String%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUri%2F%23java.net.URI%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="set-uri.html">setUri</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUri%2F%23java.lang.String%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUri%2F%23java.net.URI%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="set-uri.html">setUri</a>(uri: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUri%2F%23java.lang.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setUri" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUri%2F%23java.lang.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUri%2F%23java.lang.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setUri" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUri%2F%23java.lang.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Updates the URI of the source.</div></div>
-<div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="set-uri.html">setUri</a>(<span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>() </span>uri: <a href="https://developer.android.com/reference/kotlin/java/net/URI.html">URI</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUri%2F%23java.net.URI%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setUri" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUri%2F%23java.net.URI%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUri%2F%23java.net.URI%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setUri" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUri%2F%23java.net.URI%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Updates the URI of the source.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUrl%2F%23java.lang.String%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUrl%2F%23java.net.URL%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setUrl" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUrl%2F%23java.lang.String%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUrl%2F%23java.net.URL%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="set-url.html">setUrl</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUrl%2F%23java.lang.String%2FPointingToDeclaration%2F%2C+com.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUrl%2F%23java.net.URL%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace strikethrough"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/java/lang/Deprecated.html">Deprecated</a>()</div></div>open fun <a href="set-url.html">setUrl</a>(url: <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUrl%2F%23java.lang.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setUrl" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUrl%2F%23java.lang.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUrl%2F%23java.lang.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setUrl" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUrl%2F%23java.lang.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Updates the url</div></div>
-<div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace strikethrough"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/java/lang/Deprecated.html">Deprecated</a>()</div></div>open fun <a href="set-url.html">setUrl</a>(<span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>() </span>url: <a href="https://developer.android.com/reference/kotlin/java/net/URL.html">URL</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUrl%2F%23java.net.URL%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setUrl" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUrl%2F%23java.net.URL%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUrl%2F%23java.net.URL%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setUrl" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FGeoJsonSource%2FsetUrl%2F%23java.net.URL%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Updates the url</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetVolatile%2F%23java.lang.Boolean%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setVolatile" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetVolatile%2F%23java.lang.Boolean%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-source/set-volatile.html">setVolatile</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetVolatile%2F%23java.lang.Boolean%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":MapboxGLAndroidSDK:dokkaHtml/release" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":MapboxGLAndroidSDK:dokkaHtml/release"><div class="symbol monospace">open fun <a href="../-source/set-volatile.html">setVolatile</a>(value: <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetVolatile%2F%23java.lang.Boolean%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setVolatile" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetVolatile%2F%23java.lang.Boolean%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetVolatile%2F%23java.lang.Boolean%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" anchor-label="setVolatile" id="%5Bcom.mapbox.mapboxsdk.style.sources%2FSource%2FsetVolatile%2F%23java.lang.Boolean%2FPointingToDeclaration%2F%5D%2FFunctions%2F95609766" data-filterable-set=":MapboxGLAndroidSDK:dokkaHtml/release"></a>Set a flag defining whether or not the fetched tiles for the given source should be stored in the local cache</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="1813614056%2FConstructors%2F2110661137" anchor-label="GeoJsonSource" id="1813614056%2FConstructors%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-geo-json-source.html"><span>Geo</span><wbr></wbr><span>Json</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1813614056%2FConstructors%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="-geo-json-source.html"><span class="token function">GeoJsonSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Create an empty GeoJsonSource</div></div></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+<a data-name="-1351669794%2FConstructors%2F2110661137" anchor-label="GeoJsonSource" id="-1351669794%2FConstructors%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-geo-json-source.html"><span>Geo</span><wbr></wbr><span>Json</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1351669794%2FConstructors%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="-geo-json-source.html"><span class="token function">GeoJsonSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="../-geo-json-options/index.html">GeoJsonOptions</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Create an empty GeoJsonSource with non-default GeoJsonOptions.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1479033234%2FConstructors%2F2110661137" anchor-label="GeoJsonSource" id="1479033234%2FConstructors%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-geo-json-source.html"><span>Geo</span><wbr></wbr><span>Json</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1479033234%2FConstructors%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="-geo-json-source.html"><span class="token function">GeoJsonSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a> </span>geoJson<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Create a GeoJsonSource from a raw json string</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1546444040%2FConstructors%2F2110661137" anchor-label="GeoJsonSource" id="1546444040%2FConstructors%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-geo-json-source.html"><span>Geo</span><wbr></wbr><span>Json</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1546444040%2FConstructors%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="-geo-json-source.html"><span class="token function">GeoJsonSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a> </span>geoJson<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="../-geo-json-options/index.html">GeoJsonOptions</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Create a GeoJsonSource from a raw json string and non-default GeoJsonOptions</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="282855077%2FConstructors%2F2110661137" anchor-label="GeoJsonSource" id="282855077%2FConstructors%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-geo-json-source.html"><span>Geo</span><wbr></wbr><span>Json</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="282855077%2FConstructors%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="-geo-json-source.html"><span class="token function"><strike>GeoJsonSource</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">url<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/net/URL.html">URL</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Create a GeoJsonSource from a remote geo json file</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-212297893%2FConstructors%2F2110661137" anchor-label="GeoJsonSource" id="-212297893%2FConstructors%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-geo-json-source.html"><span>Geo</span><wbr></wbr><span>Json</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-212297893%2FConstructors%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="-geo-json-source.html"><span class="token function"><strike>GeoJsonSource</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">url<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/net/URL.html">URL</a><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="../-geo-json-options/index.html">GeoJsonOptions</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Create a GeoJsonSource from a remote geo json file and non-default GeoJsonOptions</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="483875336%2FConstructors%2F2110661137" anchor-label="GeoJsonSource" id="483875336%2FConstructors%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-geo-json-source.html"><span>Geo</span><wbr></wbr><span>Json</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="483875336%2FConstructors%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="-geo-json-source.html"><span class="token function">GeoJsonSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">uri<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/net/URI.html">URI</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Create a GeoJsonSource from a geo json URI  An URI is a combination of a protocol and a resource path.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1543132162%2FConstructors%2F2110661137" anchor-label="GeoJsonSource" id="-1543132162%2FConstructors%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-geo-json-source.html"><span>Geo</span><wbr></wbr><span>Json</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1543132162%2FConstructors%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="-geo-json-source.html"><span class="token function">GeoJsonSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">uri<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/net/URI.html">URI</a><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="../-geo-json-options/index.html">GeoJsonOptions</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Create a GeoJsonSource from a geo json URI and non-default GeoJsonOptions  An URI is a combination of a protocol and a resource path.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1622651978%2FConstructors%2F2110661137" anchor-label="GeoJsonSource" id="1622651978%2FConstructors%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-geo-json-source.html"><span>Geo</span><wbr></wbr><span>Json</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1622651978%2FConstructors%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="-geo-json-source.html"><span class="token function">GeoJsonSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">features<span class="token operator">: </span><span data-unresolved-link="com.mapbox.geojson/FeatureCollection///PointingToDeclaration/">FeatureCollection</span></span></span><span class="token punctuation">)</span></div><div class="brief ">Create a GeoJsonSource from a FeatureCollection.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2110180928%2FConstructors%2F2110661137" anchor-label="GeoJsonSource" id="-2110180928%2FConstructors%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-geo-json-source.html"><span>Geo</span><wbr></wbr><span>Json</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2110180928%2FConstructors%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="-geo-json-source.html"><span class="token function">GeoJsonSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">features<span class="token operator">: </span><span data-unresolved-link="com.mapbox.geojson/FeatureCollection///PointingToDeclaration/">FeatureCollection</span><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="../-geo-json-options/index.html">GeoJsonOptions</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Create a GeoJsonSource from a FeatureCollection and non-default GeoJsonOptions.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1986895240%2FConstructors%2F2110661137" anchor-label="GeoJsonSource" id="1986895240%2FConstructors%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-geo-json-source.html"><span>Geo</span><wbr></wbr><span>Json</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1986895240%2FConstructors%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="-geo-json-source.html"><span class="token function">GeoJsonSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">feature<span class="token operator">: </span><span data-unresolved-link="com.mapbox.geojson/Feature///PointingToDeclaration/">Feature</span></span></span><span class="token punctuation">)</span></div><div class="brief ">Create a GeoJsonSource from a <span data-unresolved-link="com.mapbox.geojson/Feature///PointingToDeclaration/">Feature</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1517555582%2FConstructors%2F2110661137" anchor-label="GeoJsonSource" id="1517555582%2FConstructors%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-geo-json-source.html"><span>Geo</span><wbr></wbr><span>Json</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1517555582%2FConstructors%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="-geo-json-source.html"><span class="token function">GeoJsonSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">feature<span class="token operator">: </span><span data-unresolved-link="com.mapbox.geojson/Feature///PointingToDeclaration/">Feature</span><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="../-geo-json-options/index.html">GeoJsonOptions</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Create a GeoJsonSource from a <span data-unresolved-link="com.mapbox.geojson/Feature///PointingToDeclaration/">Feature</span> and non-default <a href="../-geo-json-options/index.html">GeoJsonOptions</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1815142446%2FConstructors%2F2110661137" anchor-label="GeoJsonSource" id="-1815142446%2FConstructors%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-geo-json-source.html"><span>Geo</span><wbr></wbr><span>Json</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1815142446%2FConstructors%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="-geo-json-source.html"><span class="token function">GeoJsonSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">geometry<span class="token operator">: </span><span data-unresolved-link="com.mapbox.geojson/Geometry///PointingToDeclaration/">Geometry</span></span></span><span class="token punctuation">)</span></div><div class="brief ">Create a GeoJsonSource from a <span data-unresolved-link="com.mapbox.geojson/Geometry///PointingToDeclaration/">Geometry</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1461212344%2FConstructors%2F2110661137" anchor-label="GeoJsonSource" id="-1461212344%2FConstructors%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-geo-json-source.html"><span>Geo</span><wbr></wbr><span>Json</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1461212344%2FConstructors%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="-geo-json-source.html"><span class="token function">GeoJsonSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">geometry<span class="token operator">: </span><span data-unresolved-link="com.mapbox.geojson/Geometry///PointingToDeclaration/">Geometry</span><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="../-geo-json-options/index.html">GeoJsonOptions</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Create a GeoJsonSource from a <span data-unresolved-link="com.mapbox.geojson/Geometry///PointingToDeclaration/">Geometry</span> and non-default <a href="../-geo-json-options/index.html">GeoJsonOptions</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-708294359%2FFunctions%2F2110661137" anchor-label="getAttribution" id="-708294359%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/get-attribution.html"><span>get</span><wbr></wbr><span><span>Attribution</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-708294359%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/get-attribution.html"><span class="token function">getAttribution</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></div><div class="brief ">Retrieve the source attribution.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1892638215%2FFunctions%2F2110661137" anchor-label="getClusterChildren" id="1892638215%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-cluster-children.html"><span>get</span><wbr></wbr><span>Cluster</span><wbr></wbr><span><span>Children</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1892638215%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-cluster-children.html"><span class="token function">getClusterChildren</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a> </span>cluster<span class="token operator">: </span><span data-unresolved-link="com.mapbox.geojson/Feature///PointingToDeclaration/">Feature</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.mapbox.geojson/FeatureCollection///PointingToDeclaration/">FeatureCollection</span></div><div class="brief ">Returns the children of a cluster (on the next zoom level) given its id (cluster_id value from feature properties).</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-323463548%2FFunctions%2F2110661137" anchor-label="getClusterExpansionZoom" id="-323463548%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-cluster-expansion-zoom.html"><span>get</span><wbr></wbr><span>Cluster</span><wbr></wbr><span>Expansion</span><wbr></wbr><span><span>Zoom</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-323463548%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-cluster-expansion-zoom.html"><span class="token function">getClusterExpansionZoom</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a> </span>cluster<span class="token operator">: </span><span data-unresolved-link="com.mapbox.geojson/Feature///PointingToDeclaration/">Feature</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief ">Returns the zoom on which the cluster expands into several children (useful for &quot;click to zoom&quot; feature) given the cluster's cluster_id (cluster_id value from feature properties).</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-445582422%2FFunctions%2F2110661137" anchor-label="getClusterLeaves" id="-445582422%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-cluster-leaves.html"><span>get</span><wbr></wbr><span>Cluster</span><wbr></wbr><span><span>Leaves</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-445582422%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-cluster-leaves.html"><span class="token function">getClusterLeaves</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a> </span>cluster<span class="token operator">: </span><span data-unresolved-link="com.mapbox.geojson/Feature///PointingToDeclaration/">Feature</span><span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">offset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.mapbox.geojson/FeatureCollection///PointingToDeclaration/">FeatureCollection</span></div><div class="brief ">Returns all the leaves of a cluster (given its cluster_id), with pagination support: limit is the number of leaves to return (set to Infinity for all points), and offset is the amount of points to skip (for pagination).</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="13015447%2FFunctions%2F2110661137" anchor-label="getId" id="13015447%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/get-id.html"><span>get</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="13015447%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/get-id.html"><span class="token function">getId</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></div><div class="brief ">Retrieve the source id</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1173109697%2FFunctions%2F2110661137" anchor-label="getMaxOverscaleFactorForParentTiles" id="-1173109697%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/get-max-overscale-factor-for-parent-tiles.html"><span>get</span><wbr></wbr><span>Max</span><wbr></wbr><span>Overscale</span><wbr></wbr><span>Factor</span><wbr></wbr><span>For</span><wbr></wbr><span>Parent</span><wbr></wbr><span><span>Tiles</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1173109697%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/get-max-overscale-factor-for-parent-tiles.html"><span class="token function">getMaxOverscaleFactorForParentTiles</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a></div><div class="brief ">Retrieve current maximum overscale factor for parent tiles.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="436722974%2FFunctions%2F2110661137" anchor-label="getMinimumTileUpdateInterval" id="436722974%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/get-minimum-tile-update-interval.html"><span>get</span><wbr></wbr><span>Minimum</span><wbr></wbr><span>Tile</span><wbr></wbr><span>Update</span><wbr></wbr><span><span>Interval</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="436722974%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/get-minimum-tile-update-interval.html"><span class="token function">getMinimumTileUpdateInterval</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Long.html">Long</a></div><div class="brief ">Retrieve the minimum tile update interval, which is used to throttle the tile update network requests.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="486082778%2FFunctions%2F2110661137" anchor-label="getPrefetchZoomDelta" id="486082778%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/get-prefetch-zoom-delta.html"><span>get</span><wbr></wbr><span>Prefetch</span><wbr></wbr><span>Zoom</span><wbr></wbr><span><span>Delta</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="486082778%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/get-prefetch-zoom-delta.html"><span class="token function">getPrefetchZoomDelta</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a></div><div class="brief ">Retrieve current pre-fetching zoom delta.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1545460195%2FFunctions%2F2110661137" anchor-label="getUri" id="1545460195%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-uri.html"><span>get</span><wbr></wbr><span><span>Uri</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1545460195%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-uri.html"><span class="token function">getUri</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></div><div class="brief ">Get the URI of the source.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1638519616%2FFunctions%2F2110661137" anchor-label="getUrl" id="1638519616%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-url.html"><span>get</span><wbr></wbr><span><span>Url</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1638519616%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-url.html"><span class="token function">getUrl</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1541253292%2FFunctions%2F2110661137" anchor-label="isVolatile" id="1541253292%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/is-volatile.html"><span>is</span><wbr></wbr><span><span>Volatile</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1541253292%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/is-volatile.html"><span class="token function">isVolatile</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a></div><div class="brief ">Retrieve whether or not the fetched tiles for the given source should be stored in the local cache</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1785949340%2FFunctions%2F2110661137" anchor-label="querySourceFeatures" id="-1785949340%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="query-source-features.html"><span>query</span><wbr></wbr><span>Source</span><wbr></wbr><span><span>Features</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1785949340%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="query-source-features.html"><span class="token function">querySourceFeatures</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a> </span>filter<span class="token operator">: </span><a href="../../com.mapbox.mapboxsdk.style.expressions/-expression/index.html">Expression</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/List.html">List</a><span class="token operator">&lt;</span><span data-unresolved-link="com.mapbox.geojson/Feature///PointingToDeclaration/">Feature</span><span class="token operator">&gt;</span></div><div class="brief ">Queries the source for features.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1586609108%2FFunctions%2F2110661137" anchor-label="setDetached" id="1586609108%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/set-detached.html"><span>set</span><wbr></wbr><span><span>Detached</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1586609108%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/set-detached.html"><span class="token function">setDetached</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-385891096%2FFunctions%2F2110661137" anchor-label="setGeoJson" id="-385891096%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-geo-json.html"><span>set</span><wbr></wbr><span>Geo</span><wbr></wbr><span><span>Json</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-385891096%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-geo-json.html"><span class="token function">setGeoJson</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">feature<span class="token operator">: </span><span data-unresolved-link="com.mapbox.geojson/Feature///PointingToDeclaration/">Feature</span></span></span><span class="token punctuation">)</span></div><div class="brief ">Updates the GeoJson with a single feature.</div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-geo-json.html"><span class="token function">setGeoJson</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a> </span>featureCollection<span class="token operator">: </span><span data-unresolved-link="com.mapbox.geojson/FeatureCollection///PointingToDeclaration/">FeatureCollection</span></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-geo-json.html"><span class="token function">setGeoJson</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">json<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Updates the GeoJson.</div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-geo-json.html"><span class="token function">setGeoJson</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">geometry<span class="token operator">: </span><span data-unresolved-link="com.mapbox.geojson/Geometry///PointingToDeclaration/">Geometry</span></span></span><span class="token punctuation">)</span></div><div class="brief ">Updates the GeoJson with a single geometry.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1664241413%2FFunctions%2F2110661137" anchor-label="setMaxOverscaleFactorForParentTiles" id="1664241413%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/set-max-overscale-factor-for-parent-tiles.html"><span>set</span><wbr></wbr><span>Max</span><wbr></wbr><span>Overscale</span><wbr></wbr><span>Factor</span><wbr></wbr><span>For</span><wbr></wbr><span>Parent</span><wbr></wbr><span><span>Tiles</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1664241413%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/set-max-overscale-factor-for-parent-tiles.html"><span class="token function">setMaxOverscaleFactorForParentTiles</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a> </span>maxOverscaleFactor<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a></span></span><span class="token punctuation">)</span></div><div class="brief ">When a set of tiles for a current zoom level is being rendered and some of the ideal tiles that cover the screen are not yet loaded, parent tile could be used instead.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1517083750%2FFunctions%2F2110661137" anchor-label="setMinimumTileUpdateInterval" id="-1517083750%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/set-minimum-tile-update-interval.html"><span>set</span><wbr></wbr><span>Minimum</span><wbr></wbr><span>Tile</span><wbr></wbr><span>Update</span><wbr></wbr><span><span>Interval</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1517083750%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/set-minimum-tile-update-interval.html"><span class="token function">setMinimumTileUpdateInterval</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">interval<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Long.html">Long</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Sets the minimum tile update interval, which is used to throttle the tile update network requests.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="881901874%2FFunctions%2F2110661137" anchor-label="setPrefetchZoomDelta" id="881901874%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/set-prefetch-zoom-delta.html"><span>set</span><wbr></wbr><span>Prefetch</span><wbr></wbr><span>Zoom</span><wbr></wbr><span><span>Delta</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="881901874%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/set-prefetch-zoom-delta.html"><span class="token function">setPrefetchZoomDelta</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a> </span>delta<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Set the tile pre-fetching zoom delta for current source.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1316093890%2FFunctions%2F2110661137" anchor-label="setUri" id="-1316093890%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-uri.html"><span>set</span><wbr></wbr><span><span>Uri</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1316093890%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-uri.html"><span class="token function">setUri</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">uri<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-uri.html"><span class="token function">setUri</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a> </span>uri<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/net/URI.html">URI</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Updates the URI of the source.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1860647253%2FFunctions%2F2110661137" anchor-label="setUrl" id="1860647253%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-url.html"><span>set</span><wbr></wbr><span><span>Url</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1860647253%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-url.html"><span class="token function"><strike>setUrl</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">url<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-url.html"><span class="token function"><strike>setUrl</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a> </span>url<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/net/URL.html">URL</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Updates the url</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="373125508%2FFunctions%2F2110661137" anchor-label="setVolatile" id="373125508%2FFunctions%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/set-volatile.html"><span>set</span><wbr></wbr><span><span>Volatile</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="373125508%2FFunctions%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-source/set-volatile.html"><span class="token function">setVolatile</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Set a flag defining whether or not the fetched tiles for the given source should be stored in the local cache</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="425374353%2FProperties%2F2110661137" anchor-label="nativePtr" id="425374353%2FProperties%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":UnlMapAndroidSDK:dokkaHtml/release" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-source/native-ptr.html"><span>native</span><wbr></wbr><span><span>Ptr</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="425374353%2FProperties%2F2110661137"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><a data-name="425374353%2FProperties%2F2110661137" anchor-label="nativePtr" id="425374353%2FProperties%2F2110661137" data-filterable-set=":UnlMapAndroidSDK:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-source/native-ptr.html">nativePtr</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </body>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
 </html>
-

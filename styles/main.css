@@ -27,7 +27,7 @@
     border-bottom: 1px solid rgba(255, 255, 255, .2)
 }
 pre code {
-    background-color:var(--color-dark);
+    background-color: mintcream;
     border: 1px solid #999;
     display: block;
     padding: 20px;

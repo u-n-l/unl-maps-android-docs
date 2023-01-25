@@ -291,11 +291,13 @@ p.paragraph:first-child,
     height: 100%;
     max-height: calc(100vh - var(--top-navigation-height));
     overflow: auto;
+    padding: 0 25px;
 }
 
 #main {
     width: 100%;
-    max-width: calc(100% - 300px);
+    /* max-width: calc(100% - 300px); */
+    max-width: calc(100%);
     display: flex;
     flex-direction: column;
 }
@@ -308,12 +310,12 @@ p.paragraph:first-child,
 }
 
 #sideMenu {
-    padding-top: 22px;
+    /* padding-top: 22px; */
     overflow-y: auto;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .sample-container, div.CodeMirror {
@@ -489,7 +491,7 @@ code.paragraph {
 }
 
 .sideMenuPart {
-    padding-left: 12px;
+    /* padding-left: 12px; */
     box-sizing: border-box;
 }
 
@@ -641,7 +643,7 @@ p, ul, ol, table, pre, dl {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 40px !important;
     line-height: 48px;
     letter-spacing: -1px;
 }
@@ -655,6 +657,7 @@ h1.cover {
     padding-bottom: 32px;
     display: block;
 }
+
 
 h2 {
     font-size: 31px;
@@ -999,11 +1002,17 @@ td.content {
 }
 
 .sideMenuPart[data-active] > .overview:before {
-    background: var(--sidemenu-section-active-color);
+    /* background: var(--sidemenu-section-active-color); */
+    background: #edf0fd;
+   
+
 }
 
 .sideMenuPart[data-active] > .overview > a {
-    color: var(--default-white);
+    /* color: var(--default-white); */
+    color: rgba(31, 51, 73, 0.75);
+    font-weight: 700;
+    
 }
 
 .table {
@@ -1290,4 +1299,64 @@ div.runnablesample {
 
 .floating-right {
     float: right;
+}
+
+
+/* dropdown css */
+
+.slide li a {text-decoration : none; color : #2d2f31;}
+
+.setdrop {
+  padding : 5px;
+  background : #6f9dca; 
+  border-radius: 20px;
+  color : white;
+  font-size : 1.2em;
+  font-variant : small-caps;
+  cursor : pointer;
+  display: block;
+}
+
+.setdrop::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+}
+
+.slide li {padding : 10px;}
+
+#touch {position: absolute; opacity: 0; height: 0px;}    
+
+#touch:checked + .slide {height: auto;} 
+/* ______________________________________________ */
+
+
+.Set_heding_h1{
+    padding:  0 0 20px 0;
+    font-weight: 600;
+}
+.Set_gatting_heading{
+    padding: 20px 0;
+    font-weight: 600;
+}
+
+
+/* ---------------- Android Unl_Plugins All css  ------------------- */
+
+
+.Set_Unl_Link{
+    /* padding: 5px; */
+    padding-left: 20px;
+    margin-top: 3px;
+    border-radius: 5px;
+    background-color: rgba(39, 40, 44, .05);
 }

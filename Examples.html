@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en">
-<!-- Mirrored from u-n-l.github.io/unl-map-js-docs/example/popup/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Jan 2023 05:53:19 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
   <title data-react-helmet="true">Display a popup | UNL Android Sdk Docs | UNL</title>
@@ -10,14 +8,14 @@
   <meta data-react-helmet="true" charset="utf-8" />
   <meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1" />
   <meta data-react-helmet="true" name="msapplication-TileColor" content="#ffffff" />
-  <meta data-react-helmet="true" name="msapplication-config"
-    content="https://u-n-l.github.io/unl-map-js-docs/assets/favicon/browserconfig.xml?v=rMBbQAR5BL" />
+  <!-- <meta data-react-helmet="true" name="msapplication-config"
+    content="https://u-n-l.github.io/unl-map-js-docs/assets/favicon/browserconfig.xml?v=rMBbQAR5BL" /> -->
   <meta data-react-helmet="true" name="theme-color" content="#ffffff" />
   <meta data-react-helmet="true" name="twitter:site" content="@MapLibre" />
   <meta data-react-helmet="true" property="og:site_name" content="UNL" />
   <meta data-react-helmet="true" name="description" content="Add a popup to the map." />
-  <meta data-react-helmet="true" name="twitter:title" content="Display a popup | UNL Map JS Docs" />
-  <meta data-react-helmet="true" property="og:title" content="Display a popup | UNL Map JS Docs" />
+  <meta data-react-helmet="true" name="twitter:title" content="Display a popup | UNL Android Sdk Docs" />
+  <meta data-react-helmet="true" property="og:title" content="Display a popup | UNL Android Sdk Docs" />
   <meta data-react-helmet="true" name="twitter:description" content="Add a popup to the map." />
   <meta data-react-helmet="true" property="og:description" content="Add a popup to the map." />
   <meta data-react-helmet="true" property="og:url" content="index.html" />
@@ -29,7 +27,7 @@
     content="../../../../static-assets.mapbox.com/branding/social/social-1200x630.v1.png" />
   <meta data-react-helmet="true" class="swiftype" name="image" data-type="enum"
     content="../../../../static-assets.mapbox.com/branding/social/social-1200x630.v1.png" />
-  <meta data-react-helmet="true" class="swiftype" name="site" data-type="string" content="UNL Map JS Docs" />
+  <meta data-react-helmet="true" class="swiftype" name="site" data-type="string" content="UNL Android Sdk Docs" />
   <meta data-react-helmet="true" class="swiftype" name="contentType" data-type="string" content="example" />
   <meta data-react-helmet="true" class="swiftype" name="codeLanguage" data-type="string" content="JavaScript" />
   <meta data-react-helmet="true" name="twitter:card" content="summary_large_image" />
@@ -41,12 +39,12 @@
     href="../../assets/favicon/favicon-32x325c3e.png?v=rMBbQAR5BL" />
   <link data-react-helmet="true" rel="icon" type="image/png" sizes="16x16"
     href="../../assets/favicon/favicon-16x165c3e.png?v=rMBbQAR5BL" />
-  <link data-react-helmet="true" rel="manifest"
+  <!-- <link data-react-helmet="true" rel="manifest"
     href="https://u-n-l.github.io/unl-map-js-docs/assets/favicon/site.webmanifest?v=rMBbQAR5BL" />
   <link data-react-helmet="true" rel="mask-icon"
     href="https://u-n-l.github.io/unl-map-js-docs/assets/favicon/safari-pinned-tab.svg?v=rMBbQAR5BL" color="#4264fb" />
   <link data-react-helmet="true" rel="shortcut icon"
-    href="https://u-n-l.github.io/unl-map-js-docs/assets/favicon/favicon.ico?v=rMBbQAR5BL" />
+    href="https://u-n-l.github.io/unl-map-js-docs/assets/favicon/favicon.ico?v=rMBbQAR5BL" /> -->
   <script>!function () { "use strict"; var r = !1; function n() { var e, t; r && (e = document.getElementById("page-shell"), t = document.getElementById("mobile-nav-backdrop"), e && t && (e.style.height = "", e.style.overflow = "", e.style.overflowX = "hidden", t.classList.remove("shell-mobile-nav__backdrop--visible"), r = !1)) } var e = 640, a = window.document.createElement("div"), d = ["webkit", "moz", "o", "ms"], i = {}; function s(e, t) { return e + concat(concat((n = t).charAt(0).toUpperCase()).concat(n.substr(1))) } function o(e, t) { return e in (1 < arguments.length && void 0 !== t ? t : window) } function m(t, e, n) { e = 1 < arguments.length && void 0 !== e && e; return t in (2 < arguments.length && void 0 !== n ? n : a).style || !!e && d.some(function (e) { return m(s(e, t)) }) } function c(n, i, e, t) { var e = 2 < arguments.length && void 0 !== e ? e : {}, t = 3 < arguments.length && void 0 !== t ? t : a, o = e.allowPrefixedProp, l = e.allowPrefixedValue, e = !1; return (e = o || l ? d.some(function (e) { return c(o ? s(e, n) : n, l ? (t = i, "-".concat(e, "-").concat(t)) : i); var t }) : e) || (t.style[n] = i, t.style[n] === i) } function t() { var e = 0 < arguments.length && void 0 !== arguments[0] && arguments[0], t = 1 < arguments.length && void 0 !== arguments[1] ? arguments[1] : a; (i = { flexBox: m("flex", e, t) && c("display", "flex", { allowPrefixedProp: !1, allowPrefixedValue: e }, t), viewportUnits: c("width", "100vw", { allowPrefixedProp: !1, allowPrefixedValue: !1 }, t), visibilityState: o("visibilityState", window.document), devicePixelRatio: o("devicePixelRatio") }).doesCutMustard = Object.keys(i).every(function (e) { return i[e] }) } function l() { var e = window.document.getElementById("page-shell-compatibility-dismiss"), t = window.document.getElementById("page-shell-compatibility-warning"); e && e.removeEventListener("click", l), t && (t.style.display = "none"), window.localStorage && window.localStorage.setItem("suppress-browser-compatibility-warning", "true") } function u() { window.matchMedia("(min-width: " + e + "px)").matches && g() } function g() { var e = document.getElementById("mobile-nav-menu"), t = document.getElementById("page-header-content"); e.classList.remove("shell-animated-menu--visible"), t.classList.remove("shell-mobile-nav--visible"), m("textOrientation", !0) || (document.querySelector(".shell-mobile-nav__trigger__bar--top").setAttribute("transform", ""), document.querySelector(".shell-mobile-nav__trigger__bar--bottom").setAttribute("transform", "")), n(), window.removeEventListener("resize", u) } function v(e) { var t, n, i = document.getElementById("mobile-nav-trigger-toggle"), o = document.getElementById("mobile-nav-menu"), l = document.getElementById("page-header-content"), a = document.getElementById("mbx-user-menu-mobile"); e.target.getAttribute && e.target.getAttribute("data-nav-link") ? (document.documentElement.scrollTop = 0, document.body.scrollTop = 0, g()) : i.contains(e.target) ? (i = document.getElementById("mobile-nav-menu"), n = document.getElementById("page-header-content"), i.classList.add("shell-animated-menu--visible"), n.classList.add("shell-mobile-nav--visible"), m("textOrientation", !0) || (document.querySelector(".shell-mobile-nav__trigger__bar--top").setAttribute("transform", "translate(6 -1) rotate(45)"), document.querySelector(".shell-mobile-nav__trigger__bar--bottom").setAttribute("transform", "translate(-6.5 6) rotate(-45)")), r || (i = document.getElementById("page-shell"), n = document.getElementById("mobile-nav-menu"), t = document.getElementById("mobile-nav-backdrop"), n && i && t && (n = Math.max(n.getBoundingClientRect().bottom + 120, window.innerHeight), i.style.height = n + "px", i.style.overflow = "hidden", t.classList.add("shell-mobile-nav__backdrop--visible"), t.style.height = n - parseInt(t.style.top) + "px", r = !0)), window.addEventListener("resize", u)) : (o.contains(e.target) || l.contains(e.target)) && !a.contains(e.target) || g() } (window.MapboxPageShell = { afterUserCheck: function () { }, removeNavigation: function () { document.removeEventListener("click", v) }, initialize: function () { var e = function () { var e; document.addEventListener("click", v), null == i.doesCutMustard && t(!0), i.doesCutMustard || "localStorage" in window && "true" === window.localStorage.getItem("suppress-browser-compatibility-warning") || (window.document.getElementById("page-shell-compatibility-warning").style.display = "block", (e = window.document.getElementById("page-shell-compatibility-dismiss")) && e.addEventListener("click", l)) }; "loading" !== document.readyState ? e() : document.addEventListener("DOMContentLoaded", e) }, generateCompatibilitySummary: t, getCompatibilitySummary: function () { return i } }).initialize() }();</script>
 
   <style>
@@ -1384,7 +1382,7 @@
                   <div class="shell-shadow-darken10-bold shell-bg-white shell-clip shell-px24" style="padding-top:72px">
                     <div class="shell-pb24"></div>
                     <div class="shell-border-t shell-border--gray-light shell-py24"><a
-                        href="https://u-n-l.github.io/unl-map-js-docs" class="shell-color-blue">UNL</a></div>
+                        href="#" class="shell-color-blue">UNL</a></div>
                   </div>
                 </div>
               </div>
@@ -1409,8 +1407,7 @@
                         <ul>
                           <li>
                             <div class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"><a
-                                href="./index.html"
-                                class="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+                                href="./index.html" class="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
                                 style="letter-spacing:0.025em">Getting started</a></div>
                           </li>
                           <li>
@@ -1430,7 +1427,8 @@
                                 aria-expanded="false"><svg role="presentation" focusable="false"
                                   class="events-none icon inline-block align-t" style="width:18px;height:18px">
                                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-chevron-down"></use>
-                                </svg></button></div>
+                                </svg></button>
+                            </div>
                           </li>
                           <li>
                             <div class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"><a
@@ -1443,7 +1441,8 @@
                               class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 bg-blue-faint color-blue">
                               <a href="./Examples.html"
                                 class="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                                style="letter-spacing:0.025em">Examples</a></div>
+                                style="letter-spacing:0.025em">Examples</a>
+                            </div>
                           </li>
                         </ul>
                       </nav>
@@ -1484,7 +1483,7 @@
                         <div class="">
                           <div>
                             <p>Add a <a
-                                href="https://u-n-l.github.io/unl-map-js-docs/api/markers/#popup"><code>Popup</code></a>
+                                href="#"><code>Popup</code></a>
                               to the map.</p>
                             <div class="prose">
                               <div class="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
@@ -1619,7 +1618,7 @@ rel=&quot;stylesheet&quot;
           </main>
         </div>
         <div class="shell-flex-child shell-flex-child--no-shrink shell-wrapper">
-          <footer id="page-footer" class="shell-py12 shell-py48-ml" data-swiftype-index="false">
+          <!-- <footer id="page-footer" class="shell-py12 shell-py48-ml" data-swiftype-index="false">
             <div class="limiter limiter--wide">
               <div id="page-footer-legal-social"
                 class="shell-grid shell-txt-s shell-color-gray shell-py12 shell-py0-ml">
@@ -1634,7 +1633,7 @@ rel=&quot;stylesheet&quot;
                 </div>
               </div>
             </div>
-          </footer>
+          </footer> -->
         </div>
       </div>
     </div>

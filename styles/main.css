@@ -27,10 +27,11 @@
     border-bottom: 1px solid rgba(255, 255, 255, .2)
 }
 pre code {
-    background-color: mintcream;
+    /* background-color: mintcream; */
     border: 1px solid #999;
+    background-color: #fafafa;
     display: block;
-    padding: 20px;
+    padding:  20px 0;
 }
 .popup-wrapper input {
     color: rgba(255, 255, 255, .8) !important;

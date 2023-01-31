@@ -23,6 +23,7 @@
       name="msapplication-config"
       content="https://u-n-l.github.io/unl-map-js-docs/assets/favicon/browserconfig.xml?v=rMBbQAR5BL"
     /> -->
+    <link rel="icon" href="../../../images/favicon.svg" type="image/svg" />
     <meta data-react-helmet="true" name="theme-color" content="#ffffff" />
     <meta data-react-helmet="true" name="twitter:site" content="@MapLibre" />
     <meta data-react-helmet="true" property="og:site_name" content="UNL" />
@@ -185,7 +186,6 @@
       defer="defer"
     ></script>
 
-    
     <script>
       !(function () {
         "use strict";
@@ -385,35 +385,62 @@
       })();
     </script>
 
+    <script>
+      var pathToRoot = "";
+    </script>
+    <script>
+      const storage = localStorage.getItem("dokka-dark-mode");
+      if (storage == null) {
+        const osDarkSchemePreferred =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage);
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+        }
+      }
+    </script>
 
-
-<script>var pathToRoot = "";</script>
-<script>const storage = localStorage.getItem("dokka-dark-mode")
-if (storage == null) {
-    const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-    if (osDarkSchemePreferred === true) {
-        document.getElementsByTagName("html")[0].classList.add("theme-dark")
-    }
-} else {
-    const savedDarkMode = JSON.parse(storage)
-    if (savedDarkMode === true) {
-        document.getElementsByTagName("html")[0].classList.add("theme-dark")
-    }
-}
-</script>
-
-<script type="text/javascript" src="scripts/sourceset_dependencies.js" async="async"></script>
-<link href="styles/style.css" rel="Stylesheet">
-<link href="styles/jetbrains-mono.css" rel="Stylesheet">
-<link href="styles/main.css" rel="Stylesheet">
-<link href="styles/prism.css" rel="Stylesheet">
-<link href="styles/logo-styles.css" rel="Stylesheet">
-<script type="text/javascript" src="scripts/clipboard.js" async="async"></script>
-<script type="text/javascript" src="scripts/navigation-loader.js" async="async"></script>
-<script type="text/javascript" src="scripts/platform-content-handler.js" async="async"></script>
-<script type="text/javascript" src="scripts/main.js" defer="defer"></script>
-<script type="text/javascript" src="scripts/prism.js" async="async"></script>
-<script type="text/javascript" src="scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+    <script
+      type="text/javascript"
+      src="scripts/sourceset_dependencies.js"
+      async="async"
+    ></script>
+    <link href="styles/style.css" rel="Stylesheet" />
+    <link href="styles/jetbrains-mono.css" rel="Stylesheet" />
+    <link href="styles/main.css" rel="Stylesheet" />
+    <link href="styles/prism.css" rel="Stylesheet" />
+    <link href="styles/logo-styles.css" rel="Stylesheet" />
+    <script
+      type="text/javascript"
+      src="scripts/clipboard.js"
+      async="async"
+    ></script>
+    <script
+      type="text/javascript"
+      src="scripts/navigation-loader.js"
+      async="async"
+    ></script>
+    <script
+      type="text/javascript"
+      src="scripts/platform-content-handler.js"
+      async="async"
+    ></script>
+    <script type="text/javascript" src="scripts/main.js" defer="defer"></script>
+    <script
+      type="text/javascript"
+      src="scripts/prism.js"
+      async="async"
+    ></script>
+    <script
+      type="text/javascript"
+      src="scripts/symbol-parameters-wrapper_deferred.js"
+      defer="defer"
+    ></script>
 
     <style>
       a,
@@ -1268,7 +1295,8 @@ if (storage == null) {
 
       @media screen and (min-width: 800px) {
         .limiter--wide {
-          width: 91.666666666% !important;
+          /* width: 91.666666666% !important; */
+          width: 98% !important;
         }
       }
 
@@ -1791,11 +1819,9 @@ if (storage == null) {
         document.head.insertBefore(s, document.getElementById("loadCss"));
       });
     </script>
-
   </head>
 
   <body>
-    
     <div id="batfish-content">
       <div id="page-shell" data-reactroot="">
         <div
@@ -1842,7 +1868,6 @@ if (storage == null) {
             class="shell-flex-child shell-flex-child--grow shell-flex-child--no-shrink"
           >
             <div class="shell-wrapper">
-
               <header
                 class="shell-absolute shell-w-full shell-z1"
                 data-swiftype-index="false"
@@ -1937,17 +1962,12 @@ if (storage == null) {
                       <div
                         class="shell-border-t shell-border--gray-light shell-py24"
                       >
-                        <a
-                          href="../../sdk"
-                          class="shell-color-blue"
-                          >UNL</a
-                        >
+                        <a href="../../sdk" class="shell-color-blue">UNL</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </header>
-              
             </div>
 
             <main
@@ -1957,7 +1977,6 @@ if (storage == null) {
               <div class="shell-header-buffer"></div>
               <div class="limiter limiter--wide">
                 <div class="flex-parent-mm">
-
                   <div
                     class="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm"
                     style="width: 100%"
@@ -1971,18 +1990,15 @@ if (storage == null) {
                       <div class="mb6 border-b border--darken10">
                         <div class="mb6">
                           <div class="dr-ui--product-menu">
-                            <a
-                              
-                              class="txt-fancy txt-l block color-blue-on-hover"
-                              >UNL Android Sdk </a
-                            >
+                            <a class="txt-fancy txt-l block color-blue-on-hover"
+                              >UNL Android Sdk
+                            </a>
                           </div>
                         </div>
                       </div>
 
                       <div class="">
                         <nav class="mx-neg12">
-                
                           <ul>
                             <li>
                               <div
@@ -2008,35 +2024,7 @@ if (storage == null) {
                                 >
                               </div>
                             </li>
-                            <li>
-                              <div
-                                class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 flex-parent flex-parent--space-between-main"
-                              >
-                                <a
-                                  href="API-Reference.html"
-                                  class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm"
-                                  style="letter-spacing: 0.025em"
-                                  >API Reference</a
-                                ><button
-                                  class="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
-                                  aria-label="Toggle API Reference menu"
-                                  aria-controls="menu-api-reference"
-                                  aria-expanded="false"
-                                >
-                                  <svg
-                                    role="presentation"
-                                    focusable="false"
-                                    class="events-none icon inline-block align-t"
-                                    style="width: 18px; height: 18px"
-                                  >
-                                    <use
-                                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                                      xlink:href="#icon-chevron-down"
-                                    ></use>
-                                  </svg>
-                                </button>
-                              </div>
-                            </li>
+                           
                             <li>
                               <div
                                 class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
@@ -2045,7 +2033,7 @@ if (storage == null) {
                                   href="./UNL-Plugins.html"
                                   class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm"
                                   style="letter-spacing: 0.025em"
-                                  >UNL Plugins</a
+                                  >Custom Plugins</a
                                 >
                               </div>
                             </li>
@@ -2065,21 +2053,19 @@ if (storage == null) {
                           </ul>
                         </nav>
                       </div>
-                   
                     </div>
                   </div>
 
-                  
-                  <div class="flex-child flex-child--grow" style="width: 100%;  padding: 25px;" >
-                    <div
+                  <div
+                    class="flex-child flex-child--grow"
+                    style="width: 100%; padding: 0 25px"
+                  >
+                    <!-- <div
                       class="dr-ui--breadcrumb pt3 pb12 none block-mm"
                       data-swiftype-index="false"
                     >
-                      <span class="none inline-block-mm"
-                        >
-                        <a
-                          class="link"
-                          href="./UNL-Plugins.html"
+                      <span class="none inline-block-mm">
+                        <a class="link" href="./UNL-Plugins.html"
                           >UNL Android Sdk</a
                         ><span class="color-gray-light inline-block-mm none px6"
                           ><svg
@@ -2104,9 +2090,7 @@ if (storage == null) {
                               xmlns:xlink="http://www.w3.org/1999/xlink"
                               xlink:href="#icon-arrow-left"
                             ></use></svg></span
-                        ><a
-                          class="link"
-                        href="./UNL-Plugins.html"
+                        ><a class="link" href="./UNL-Plugins.html"
                           >UNL Android Sdk Docs</a
                         ><span class="color-gray-light inline-block-mm none px6"
                           ><svg
@@ -2122,22 +2106,218 @@ if (storage == null) {
                       ><span class="color-gray none inline-block-mm"
                         >Getting started</span
                       >
-                    </div>
+                    </div> -->
                     <div id="docs-content">
                       <div class="col prose col--8-mxl col--12">
-                        <h1 class="txt-fancy">Getting started</h1>
+                        <!-- <h1 class="txt-fancy">Getting started</h1> -->
+<!-- changes by suyash -->
+
+                        <div class="flex-parent flex-parent--center-cross">
+                          <div class="flex-child flex-child--grow">
+                            <h1 class="mb6 txt-fancy">UNL Android Sdk</h1>
+                            <p>
+                              <span class="inline-block mr6"
+                                >Current version: <code>v<!-- -->0.0.3</code>
+                              </span>
+                            </p>
+                            <ul class="unprose mb24 ml24">
+                              <li class="ml-neg24 flex-parent">
+                                <div
+                                  class="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+                                >
+                                  <svg
+                                    role="presentation"
+                                    focusable="false"
+                                    class="events-none icon inline-block align-t"
+                                    style="width: 18px; height: 18px"
+                                  >
+                                    <use
+                                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="#icon-check"
+                                    ></use>
+                                  </svg>
+                                </div>
+                                <div class="flex-child flex-child--grow">
+                                  Custom map styles
+                                </div>
+                              </li>
+                              <li class="ml-neg24 flex-parent">
+                                <div
+                                  class="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+                                >
+                                  <svg
+                                    role="presentation"
+                                    focusable="false"
+                                    class="events-none icon inline-block align-t"
+                                    style="width: 18px; height: 18px"
+                                  >
+                                    <use
+                                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="#icon-check"
+                                    ></use>
+                                  </svg>
+                                </div>
+                                <div class="flex-child flex-child--grow">
+                                  Fast vector maps
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div
+                            class="flex-child-ml flex-child--no-shrink w300-mxl align-r"
+                          >
+                            <div class="none block-mxl">
+                              <div class="overview-header-browser mb6">
+                                <div class="shadow-darken25 round bg-white">
+                                  <div class="bg-gray h30-mm h18 round-t">
+                                    <div
+                                      class="color-white flex-parent flex-parent--center-cross h30-mm h18 px6"
+                                    >
+                                      <span class="color-red-light"
+                                        ><svg
+                                          role="presentation"
+                                          focusable="false"
+                                          class="events-none icon"
+                                          style="width: 18px; height: 18px"
+                                        >
+                                          <use
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="#icon-circle"
+                                          ></use></svg></span
+                                      ><span class="color-yellow-light"
+                                        ><svg
+                                          role="presentation"
+                                          focusable="false"
+                                          class="events-none icon"
+                                          style="width: 18px; height: 18px"
+                                        >
+                                          <use
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="#icon-circle"
+                                          ></use></svg></span
+                                      ><span class="color-green-light"
+                                        ><svg
+                                          role="presentation"
+                                          focusable="false"
+                                          class="events-none icon"
+                                          style="width: 18px; height: 18px"
+                                        >
+                                          <use
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="#icon-circle"
+                                          ></use>
+                                          </svg
+                                      >
+                                    </span>
+                                    </div>
+                                  </div>
+                                  <div class="block-mm none">
+                                    <div
+                                      class="h30 bg-gray-faint color-gray flex-parent flex-parent--space-between-main px6 flex-parent--center-cross"
+                                    >
+                                      <div
+                                        style="width: 70px"
+                                        class="flex-parent-inline flex-parent--space-between-main flex-parent--center-cross mr18"
+                                      >
+                                        <svg
+                                          role="presentation"
+                                          focusable="false"
+                                          class="events-none icon"
+                                          style="width: 18px; height: 18px"
+                                        >
+                                          <use
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="#icon-arrow-left"
+                                          ></use></svg
+                                        ><svg
+                                          role="presentation"
+                                          focusable="false"
+                                          class="events-none icon"
+                                          style="width: 18px; height: 18px"
+                                        >
+                                          <use
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="#icon-arrow-right"
+                                          ></use></svg
+                                        ><svg
+                                          role="presentation"
+                                          focusable="false"
+                                          class="events-none icon"
+                                          style="width: 18px; height: 18px"
+                                        >
+                                          <use
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="#icon-rotate"
+                                          ></use>
+                                        </svg>
+                                      </div>
+                                      <div
+                                        class="w120 h18 bg-white round-full flex-child--grow px12"
+                                      ></div>
+                                      <div
+                                        style="width: 70px"
+                                        class="flex-parent-inline flex-parent--space-between-main align-r flex-parent--center-cross ml18"
+                                      >
+                                        <svg
+                                          role="presentation"
+                                          focusable="false"
+                                          class="events-none icon"
+                                          style="width: 18px; height: 18px"
+                                        >
+                                          <use
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="#icon-heart"
+                                          ></use></svg
+                                        ><svg
+                                          role="presentation"
+                                          focusable="false"
+                                          class="events-none icon"
+                                          style="width: 18px; height: 18px"
+                                        >
+                                          <use
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="#icon-mapbox"
+                                          ></use></svg
+                                        ><svg
+                                          role="presentation"
+                                          focusable="false"
+                                          class="events-none icon"
+                                          style="width: 18px; height: 18px"
+                                        >
+                                          <use
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="#icon-menu"
+                                          ></use>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        
                       </div>
+                      
+<!-- changes by suyash -->
+<hr style="margin-top: 30px; margin-bottom: 30px;>
+
+<!-- changes by suyash -->
+
                       <div id="main" style="padding: 25px">
-                        <h1 id="introduction" class="Set_heding_h1">Introduction</h1>
+                        <!-- <h1 id="introduction" class="Set_heding_h1">
+                          Introduction
+                        </h1> -->
                         <p>
-                          unl-maps-sdk-android is a mapping SDK for developers
+                         <span style="font-weight: 700;">UNL Android Sdk</span> is a mapping SDK for developers
                           of android applications, extending and enhancing
                           functionalities of
-                          <a
-                            href="#"
-                            >UNLMap Android SDK</a
-                          >. Apart from the capabilities of maplibre, the
-                          package exposes the following controls:
+                          <a href="#">UNLMap Android SDK</a>. Apart from the
+                          capabilities of maplibre, the package exposes the
+                          following controls:
                         </p>
                         <ul>
                           <li>
@@ -2151,16 +2331,61 @@ if (storage == null) {
                             </p>
                           </li>
                         </ul>
-                        <h1 id="getting-started" class="Set_gatting_heading">Getting started</h1>
-                        <h1 id="installation" class="Set_heding_h1">Installation</h1>
+
+
+<hr>
+
+
+<div>
+  <h3>Requirements</h3>
+  <p>The UNL Maps SDK for Android is compatible with applications that:</p>
+  <p> Are built using the Android SDK 21 or higher.</p>
+  <p>Use Java 11 for sourceCompatibility and targetCompatibility</p>
+</div>
+
+<hr>
+
+<div>
+  <h3>Java compatibility</h3>
+  <p>The UNL Maps SDK for Android is built with Kotlin, the official language recommended by Google for Android development. Kotlin is 100% interoperable with Java.</p>
+  
+</div>
+
+<hr>
+
+<div>
+  <h3>Contribution</h3>
+  <p> UNL Android Sdk is an advance Map SDK library,
+    builld using the core open-source library of
+    MapLibre GL JS. UNL conforms to MapLibre GL
+    licensing terms listed under 3-Clause BSD
+    License.</p>
+  
+</div>
+
+<hr>
+
+
+
+                        <!-- changes by suyash -->
+                        <!-- <h1 id="getting-started" class="Set_gatting_heading">Getting started</h1> -->
+                        <h3 id="installation" class="Set_heding_h1">
+                          Installation
+                        </h1>
                         <p>
                           Add the following dependency to your
                           <code>build.gradle</code> file:
                         </p>
-                        <pre><code>dependencies {
-                                        implementation &#39;com.github.u-n-l:unl-maps-sdk-android:Tag&#39;
-                                    }
-                                    </code></pre>
+                        <!-- <pre><code> 
+                                      <h4 style="font-size: 20px;"> implementation &#39;com.github.u-n-l:unl-maps-sdk-android:Tag&#39;</h4> 
+                                    
+                                    </code></pre> -->
+<!-- changes by suyash -->
+
+<div class="Set_AddMaven">
+  <p style="font-size: 20px;"> implementation &#39;com.github.u-n-l:unl-maps-sdk-android:Tag&#39;</p>
+</div>
+
                         <h3 id="add-maven-urls">Add Maven URLs</h3>
                         <pre><code>    allprojects {
                                         repositories {
@@ -2179,23 +2404,28 @@ if (storage == null) {
                                             }
                                         }
                                     </code></pre>
-                        <h3
+                                 
+                           <h3
                           id="enable-androidx-by-adding-following-in-gradleproperties"
                         >
                           Enable AndroidX by adding following in
                           <code>gradle.properties</code>.
                         </h3>
-                        <pre><code>android.useAndroidX=true
-                                    android.enableJetifier=true
+                        <pre><code class="set_code_div">
+android.useAndroidX=true
+android.enableJetifier=true
                                     </code></pre>
-                        <h1 id="permissons" class="Set_gatting_heading">Permissons</h1>
-                        <p>
+                        <h1 id="permissons" class="Set_gatting_heading">
+                          Permissons
+                        </h1>
+                        <p style="padding-bottom: 20px;">
                           Add the following permissions to your
                           <code>AndroidManifest.xml</code> file:
                         </p>
-                        <pre><code>&lt;uses-permission android:name=&quot;android.permission.ACCESS_NETWORK_STATE&quot; /&gt;
-                                    &lt;uses-permission android:name=&quot;android.permission.ACCESS_WIFI_STATE&quot; /&gt;
-                                    &lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;
+                        <pre><code class="set_code_div">
+&lt;uses-permission android:name=&quot;android.permission.ACCESS_NETWORK_STATE&quot; /&gt;
+&lt;uses-permission android:name=&quot;android.permission.ACCESS_WIFI_STATE&quot; /&gt;
+&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;
                                     </code></pre>
                         <h3 id="initializing-the-sdk">Initializing the SDK</h3>
                         <h4 id="example-usage">Example usage</h4>
@@ -2203,10 +2433,10 @@ if (storage == null) {
                           Your <code>activity.xml</code>
                         </h4>
                         <pre><code class="language-Kotlin">
-                                     &lt;com.unl.map.sdk.views.UnlMapView
-                                          android:id=&quot;@+id/mapView&quot;
-                                          android:layout_width=&quot;match_parent&quot;
-                                          android:layout_height=&quot;match_parent&quot; /&gt;
+  &lt;com.unl.map.sdk.views.UnlMapView
+  android:id=&quot;@+id/mapView&quot;
+  android:layout_width=&quot;match_parent&quot;
+  android:layout_height=&quot;match_parent&quot; /&gt;
                                     </code></pre>
                         <h4
                           id="your-activity-above-setcontentviewrlayoutactivity"
@@ -2214,53 +2444,53 @@ if (storage == null) {
                           Your <code>Activity</code> above
                           <code>setContentView(R.layout.activity)</code>
                         </h4>
-                        <pre><code class="language-Kotlin"> override fun onCreate(savedInstanceState: Bundle?) {
-                                            super.onCreate(savedInstanceState)
-                                        /// Initializing the UNL SDK
-                                        UnlMap(applicationContext,getString(R.string.api_key),getString(R.string.vpm_id))
-                                        setContentView(R.layout.activity)
+                        <pre><code class="language-Kotlin" style="padding-left: 20px;"> override fun onCreate(savedInstanceState: Bundle?) {
+                          super.onCreate(savedInstanceState)
+
+                          // Initializing the UNL SDK
+                          UnlMap(applicationContext,getString(R.string.api_key),getString(R.string.vpm_id))
+                          setContentView(R.layout.activity)
                                     
-                                        //Getting Instance of `UnlMapView` from `activity.xml`
-                                        val unlMap=findViewById&lt;UnlMapView&gt;(R.id.mapView)
+                          //Getting Instance of `UnlMapView` from `activity.xml`
+                          val unlMap=findViewById&lt;UnlMapView&gt;(R.id.mapView)
                                     
-                                        //This `getMapAsync` method is used for map loaded to view.
-                                        unlMap.getMapAsync {
-                                                // Need supportFragmentManager and Activity for showing some controls
-                                                unlMap.fm=supportFragmentManager
-                                                unlMap.activity=this
+                          //This `getMapAsync` method is used for map loaded to view.
+                           unlMap.getMapAsync {
+
+                          // Need supportFragmentManager and Activity for showing some controls
+                           unlMap.fm=supportFragmentManager
+                           unlMap.activity=this
                                     
-                                                // enableTileSelector method is used to show TileSelector on UnlMapView or not.
-                                                unlMap.enableTileSelector(true)
-                                                // setGridControls method is used to show GridControls on UnlMapView or not.
-                                                unlMap.setGridControls(this,true)
-                                                // setGridControls method is used to set position for TileSelector.
-                                                unlMap.setTileSelectorGravity(Gravity.RIGHT)
-                                            }
+                          // enableTileSelector method is used to show TileSelector on UnlMapView or not.
+                           unlMap.enableTileSelector(true)
+
+                          // setGridControls method is used to show GridControls on UnlMapView or not.
+                           unlMap.setGridControls(this,true)
+
+                          // setGridControls method is used to set position for TileSelector.
+                           unlMap.setTileSelectorGravity(Gravity.RIGHT)
+                  }
                                     
-                                     }
+        }
                                     </code></pre>
-                        <p>
+                        <p style=" margin-top: 20px;">
                           See
-                          <!-- <a
-                            href="https://u-n-l.github.io/unl-map-js-docs/authentication/"
-                            >SDK Authentication Docs</a
-                          > -->
-                          <a
-                            href="#"
-                            >SDK Authentication Docs</a
-                          >
+                      
+                          <a style="border-bottom: 1px solid black; color: #314ccd;" href="../../Authentication.html">SDK Authentication Docs</a>
                           for instructions on how to generate an
                           <code>apiKey</code> and <code>vpmId</code> to get
                           started with the UnlSdk.
                         </p>
-                        <h1 id="custom-controls" class="Set_gatting_heading">Custom controls</h1>
-                        <p>
+                        <h3 id="custom-controls">
+                          Custom controls
+                        </h1>
+                        <p style="padding-bottom: 20px;">
                           For Custom controls, it can be accessed by assigning a
                           class <code>UNLMapView</code>. For Example:
                         </p>
                         <pre><code class="language-Kotlin">   var mapView: UnlMapView
                                     </code></pre>
-                        <h2 id="grid-controls">Grid Controls</h2>
+                        <h3 id="grid-controls">Grid Controls</h3>
                         <p>
                           Grid controls can be enabled in your activity
                           initialisation by passing the
@@ -2360,7 +2590,9 @@ if (storage == null) {
                             </tr>
                           </tbody>
                         </table>
-                        <h1 id="tiles-selector" class="Set_gatting_heading">Tiles selector</h1>
+                        <h3 id="tiles-selector">
+                          Tiles selector
+                        </h3>
                         <p>
                           Tile selector can be enabled in your activity,
                           initialisation by passing the
@@ -2417,21 +2649,24 @@ if (storage == null) {
                                     unlMap.loadStyle(TileEnum.BASE)
                                     </code></pre>
 
+
+
                         <div class="footer">
                           <span class="go-to-top-icon"
                             ><a href="#content" id="go-to-top-link"></a></span
                           ><span>© 2022 Copyright</span
                           ><span class="pull-right"
                             ><span>Generated by </span
-                            ><a 
+                            ><a
                               ><span>UNL GLOBAL</span
                               ><span class="padded-icon"></span></a
                           ></span>
                         </div>
+                        
+                        
                       </div>
                     </div>
                   </div>
-                  
                 </div>
               </div>
               <div class="fixed block none-mm mx24 my24 z5 bottom right">
@@ -2458,8 +2693,6 @@ if (storage == null) {
                 </div>
               </div>
             </main>
-
-
           </div>
           <div
             class="shell-flex-child shell-flex-child--no-shrink shell-wrapper"
@@ -2501,8 +2734,6 @@ if (storage == null) {
         </div>
       </div>
     </div>
-
-
 
     <div>
       <script>

@@ -10,6 +10,7 @@
   <meta data-react-helmet="true" name="msapplication-TileColor" content="#ffffff" />
   <!-- <meta data-react-helmet="true" name="msapplication-config"
     content="https://u-n-l.github.io/unl-map-js-docs/assets/favicon/browserconfig.xml?v=rMBbQAR5BL" /> -->
+  <link rel="icon" href="../../../images/favicon.svg" type="image/svg">
   <meta data-react-helmet="true" name="theme-color" content="#ffffff" />
   <meta data-react-helmet="true" name="twitter:site" content="@MapLibre" />
   <meta data-react-helmet="true" property="og:site_name" content="UNL" />
@@ -39,6 +40,7 @@
     href="../../assets/favicon/favicon-32x325c3e.png?v=rMBbQAR5BL" />
   <link data-react-helmet="true" rel="icon" type="image/png" sizes="16x16"
     href="../../assets/favicon/favicon-16x165c3e.png?v=rMBbQAR5BL" />
+    
   <!-- <link data-react-helmet="true" rel="manifest"
     href="https://u-n-l.github.io/unl-map-js-docs/assets/favicon/site.webmanifest?v=rMBbQAR5BL" />
   <link data-react-helmet="true" rel="mask-icon"
@@ -814,7 +816,8 @@
 
     @media screen and (min-width:800px) {
       .limiter--wide {
-        width: 91.666666666% !important
+        /* width: 91.666666666% !important */
+        width: 98% !important;
       }
     }
 
@@ -1381,8 +1384,8 @@
                   class="shell-absolute shell-z5 shell-w-full shell-animated-menu" style="top:0;right:0">
                   <div class="shell-shadow-darken10-bold shell-bg-white shell-clip shell-px24" style="padding-top:72px">
                     <div class="shell-pb24"></div>
-                    <div class="shell-border-t shell-border--gray-light shell-py24"><a
-                        href="#" class="shell-color-blue">UNL</a></div>
+                    <div class="shell-border-t shell-border--gray-light shell-py24"><a href="#"
+                        class="shell-color-blue">UNL</a></div>
                   </div>
                 </div>
               </div>
@@ -1416,25 +1419,12 @@
                                 class="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
                                 style="letter-spacing:0.025em">Authentication</a></div>
                           </li>
-                          <li>
-                            <div
-                              class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 flex-parent flex-parent--space-between-main">
-                              <a href="./API-Reference.html"
-                                class="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                                style="letter-spacing:0.025em">API Reference</a><button
-                                class="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
-                                aria-label="Toggle API Reference menu" aria-controls="menu-api-reference"
-                                aria-expanded="false"><svg role="presentation" focusable="false"
-                                  class="events-none icon inline-block align-t" style="width:18px;height:18px">
-                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-chevron-down"></use>
-                                </svg></button>
-                            </div>
-                          </li>
+                        
                           <li>
                             <div class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"><a
                                 href="./UNL-Plugins.html"
                                 class="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                                style="letter-spacing:0.025em">UNL Plugins</a></div>
+                                style="letter-spacing:0.025em">Custom Plugins</a></div>
                           </li>
                           <li>
                             <div
@@ -1449,160 +1439,33 @@
                     </div>
                   </div>
                 </div>
-                <div class="flex-child flex-child--grow" style="width:100%">
-                  <div class="dr-ui--breadcrumb pt3 pb12 none block-mm" data-swiftype-index="false"><span
-                      class="none inline-block-mm"><a class="link" href="./UNL-Plugins.html">UNL
-                        Map JS</a><span class="color-gray-light inline-block-mm none px6"><svg role="presentation"
-                          focusable="false" class="events-none icon inline-block align-t"
-                          style="width:18px;height:18px">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-chevron-right"></use>
-                        </svg></span></span><span class="none inline-block-mm"><a class="link"
-                        href="./UNL-Plugins.html">UNL Android Sdk Docs</a><span
-                        class="color-gray-light inline-block-mm none px6"><svg role="presentation" focusable="false"
-                          class="events-none icon inline-block align-t" style="width:18px;height:18px">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-chevron-right"></use>
-                        </svg></span></span><span class=""><span class="color-gray-light inline-block none-mm pr6"><svg
-                          role="presentation" focusable="false" class="events-none icon inline-block align-t"
-                          style="width:18px;height:18px">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left"></use>
-                        </svg></span><a class="link" href="./Examples.html">Examples</a><span
-                        class="color-gray-light inline-block-mm none px6"><svg role="presentation" focusable="false"
-                          class="events-none icon inline-block align-t" style="width:18px;height:18px">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-chevron-right"></use>
-                        </svg></span></span><span class="color-gray none inline-block-mm">Display a popup</span></div>
-                  <div id="docs-content">
-                    <div class="col prose col--8-mxl col--12">
-                      <h1 class="txt-fancy">Display a popup</h1>
-                    </div>
-                    <div class="grid grid--gut60">
-                      <div class="dr-ui--page-layout-aside col col--12 col--4-mxl">
-                        <aside data-swiftype-index="false"
-                          class="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl" style="top:10px"></aside>
-                      </div>
-                      <div class="col col--8-mxl col--12 prose">
-                        <div class="">
-                          <div>
-                            <p>Add a <a
-                                href="#"><code>Popup</code></a>
-                              to the map.</p>
-                            <div class="prose">
-                              <div class="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-                                style="background:#f4f7fb;color:#425870">
-                                <div class="flex-child mr18 none block-mm pt3">
-                                  <div
-                                    class="bg-gray-light round-full color-gray flex-parent flex-parent--center-main flex-parent--center-cross"
-                                    style="width:50px;height:50px"><svg role="presentation" focusable="false"
-                                      class="events-none icon" style="width:40px;height:40px">
-                                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-book"></use>
-                                    </svg></div>
-                                </div>
-                                <div class="flex-child prose">
-                                  <div class="txt-bold txt-m mb6">Note</div>If you want to test this example, edit it in
-                                  JSFiddle or CodePen and replace the &quot;YOUR-OWN-API-KEY&quot; and
-                                  &quot;YOUR-OWN-VPM-ID&quot; placeholders with your actual api key and vpm id.
-                                </div>
-                              </div>
-                              <div class="bg-white">
-                                <div id="code" class="relative">
-                                  <div data-swiftype-index="false">
-                                    <div class="relative prose">
-                                      <div class="absolute-mm mb6 mb0-mm top right mr36-mm z2" style="margin-top:4px">
-                                        <form class="inline-block" method="POST"
-                                          action="https://jsfiddle.net/api/post/library/pure/" target="_blank"><input
-                                            type="submit" style="border:0" class="btn btn--s cursor-pointer round"
-                                            value="Edit in JSFiddle" /><input type="hidden" name="wrap"
-                                            value="b" /><input type="hidden" name="css" value="
-	body { margin: 0; padding: 0; }
-	#map { position: absolute; top: 0; bottom: 0; width: 100%; }
-" /><input type="hidden" name="html" value="
-&lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
 
 
-" /><input type="hidden" name="js" value="
-  var map = new UnlSdk.Map({
-    container: &quot;map&quot;,
-    apiKey: &quot;YOUR-OWN-API-KEY&quot;,
-    vpmId: &quot;YOUR-OWN-VPM-ID&quot;,
-    center: [-96, 37.8],
-    zoom: 3,
-  });
 
-  var popup = new UnlSdk.Popup({ closeOnClick: false })
-    .setLngLat([-96, 37.8])
-    .setHTML(&quot;&lt;h1&gt;Hello World!&lt;/h1&gt;&quot;)
-    .addTo(map);
-" /><input type="hidden" name="title" value="Display a popup" /><input type="hidden" name="resources"
-                                            value="https://unpkg.com/unl-map-js@0.0.3/lib/unl-map-js.js,https://unpkg.com/unl-map-js@0.0.3/lib/unl-map-js.css,https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.css" /><input
-                                            type="hidden" name="description" value="Add a popup to the map.
 
-See the example: https://docs.mapbox.com//unl-map-js-docs/example/popup/" /></form>
-                                        <form class="inline-block ml6" method="POST"
-                                          action="https://codepen.io/pen/define" target="_blank"><input type="hidden"
-                                            name="data"
-                                            value="{&quot;title&quot;:&quot;Display a popup&quot;,&quot;html&quot;:&quot;\n&lt;div id=\&quot;map\&quot;&gt;&lt;/div&gt;\n\n\n&quot;,&quot;html_pre_processor&quot;:&quot;none&quot;,&quot;description&quot;:&quot;Add a popup to the map.\n\nSee the example: [https://docs.mapbox.com//unl-map-js-docs/example/popup/](https://docs.mapbox.com//unl-map-js-docs/example/popup/)&quot;,&quot;tags&quot;:[&quot;mapbox&quot;,&quot;maps&quot;],&quot;css&quot;:&quot;\n\tbody { margin: 0; padding: 0; }\n\t#map { position: absolute; top: 0; bottom: 0; width: 100%; }\n&quot;,&quot;css_pre_processor&quot;:&quot;none&quot;,&quot;js&quot;:&quot;\n  var map = new UnlSdk.Map({\n    container: \&quot;map\&quot;,\n    apiKey: \&quot;YOUR-OWN-API-KEY\&quot;,\n    vpmId: \&quot;YOUR-OWN-VPM-ID\&quot;,\n    center: [-96, 37.8],\n    zoom: 3,\n  });\n\n  var popup = new UnlSdk.Popup({ closeOnClick: false })\n    .setLngLat([-96, 37.8])\n    .setHTML(\&quot;&lt;h1&gt;Hello World!&lt;/h1&gt;\&quot;)\n    .addTo(map);\n&quot;,&quot;js_pre_processor&quot;:&quot;none&quot;,&quot;css_external&quot;:&quot;https://unpkg.com/unl-map-js@0.0.3/lib/unl-map-js.css;https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.css&quot;,&quot;js_external&quot;:&quot;https://unpkg.com/unl-map-js@0.0.3/lib/unl-map-js.js&quot;,&quot;head&quot;:&quot;&lt;meta name=\&quot;viewport\&quot; content=\&quot;initial-scale=1,maximum-scale=1,user-scalable=no\&quot; /&gt;&quot;}" /><input
-                                            type="submit" style="border:0" class="btn btn--s cursor-pointer round"
-                                            value="Edit in CodePen" /></form>
-                                      </div>
-                                      <div class="relative round z0 scroll-styled">
-                                        <pre><code class="px0 hljs"><div class="relative z2" data-chunk-code="chunk-0"><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Display a popup<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>initial-scale=1,maximum-scale=1,user-scalable=no<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/unl-map-js@0.0.3/lib/unl-map-js.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/unl-map-js@0.0.3/lib/unl-map-js.css<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.css<span class="token punctuation">"</span></span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token punctuation">/></span></span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css"></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px">	<span class="token selector">body</span> <span class="token punctuation">{</span> <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <span class="token punctuation">}</span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px">	<span class="token selector">#map</span> <span class="token punctuation">{</span> <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span> <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span> <span class="token punctuation">}</span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>map<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript"></div></div><div class="pr12" style="padding-left:26.45px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token keyword">var</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UnlSdk<span class="token punctuation">.</span>Map</span><span class="token punctuation">(</span><span class="token punctuation">{</span></div></div><div class="pr12" style="padding-left:40.9px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token literal-property property">container</span><span class="token operator">:</span> <span class="token string">"map"</span><span class="token punctuation">,</span></div></div><div class="pr12" style="padding-left:40.9px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token literal-property property">apiKey</span><span class="token operator">:</span> <span class="token string">"YOUR-OWN-API-KEY"</span><span class="token punctuation">,</span></div></div><div class="pr12" style="padding-left:40.9px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token literal-property property">vpmId</span><span class="token operator">:</span> <span class="token string">"YOUR-OWN-VPM-ID"</span><span class="token punctuation">,</span></div></div><div class="pr12" style="padding-left:40.9px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token literal-property property">center</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">96</span><span class="token punctuation">,</span> <span class="token number">37.8</span><span class="token punctuation">]</span><span class="token punctuation">,</span></div></div><div class="pr12" style="padding-left:40.9px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token literal-property property">zoom</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span></div></div><div class="pr12" style="padding-left:26.45px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"> </div></div><div class="pr12" style="padding-left:26.45px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token keyword">var</span> popup <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UnlSdk<span class="token punctuation">.</span>Popup</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">closeOnClick</span><span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">)</span></div></div><div class="pr12" style="padding-left:40.9px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token punctuation">.</span><span class="token function">setLngLat</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">96</span><span class="token punctuation">,</span> <span class="token number">37.8</span><span class="token punctuation">]</span><span class="token punctuation">)</span></div></div><div class="pr12" style="padding-left:40.9px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token punctuation">.</span><span class="token function">setHTML</span><span class="token punctuation">(</span><span class="token string">"&lt;h1>Hello World!&lt;/h1>"</span><span class="token punctuation">)</span></div></div><div class="pr12" style="padding-left:40.9px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token punctuation">.</span><span class="token function">addTo</span><span class="token punctuation">(</span>map<span class="token punctuation">)</span><span class="token punctuation">;</span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"> </div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span></div></div><div class="pr12" style="padding-left:12px"><div style="text-indent:-14.45px;margin-left:14.45px"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></div></div></div></code></pre>
-                                        <div class="absolute z2 top right mr6 mt6 color-white">
-                                          <div class="inline-block"><button aria-label="Copy" type="button"
-                                              class="btn btn--xs py3 px3 round" data-clipboard-text="&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot; /&gt;
-&lt;title&gt;Display a popup&lt;/title&gt;
-&lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1,maximum-scale=1,user-scalable=no&quot; /&gt;
-&lt;script src=_https_/unpkg.com/unl-map-js%400.0.3/lib/unl-map-js.js___/script_.html
-&lt;link href=_https_/unpkg.com/unl-map-js%400.0.3/lib/unl-map-js.html rel=&quot;stylesheet&quot; /&gt;
-&lt;link
-href=_https_/unpkg.com/maplibre-gl%402.1.9/dist/maplibre-gl.html
-rel=&quot;stylesheet&quot;
-/&gt;
-&lt;style&gt;
-	body { margin: 0; padding: 0; }
-	#map { position: absolute; top: 0; bottom: 0; width: 100%; }
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
-&lt;script&gt;
-  var map = new UnlSdk.Map({
-    container: &quot;map&quot;,
-    apiKey: &quot;YOUR-OWN-API-KEY&quot;,
-    vpmId: &quot;YOUR-OWN-VPM-ID&quot;,
-    center: [-96, 37.8],
-    zoom: 3,
-  });
-
-  var popup = new UnlSdk.Popup({ closeOnClick: false })
-    .setLngLat([-96, 37.8])
-    .setHTML(&quot;&lt;h1&gt;Hello World!&lt;/h1&gt;&quot;)
-    .addTo(map);
-&lt;/script&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;"><svg role="presentation" focusable="false" class="events-none icon" style="width:18px;height:18px">
-                                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                  xlink:href="#icon-clipboard"></use>
-                                              </svg></button>
-                                            <div class="hide-visually" role="tooltip">
-                                              <div class="txt-s wmax240">Copy</div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+               <div>
+                <h2>
+                  Download Sample Code
+                </h2>
+                <hr>
+                <h1 style="padding: 10px 0;">You can download our sample code from Github</h1>
+               
+                 <a style="color: #314ccd; border-bottom: 1px solid #314ccd;" href="https://github.com/u-n-l/unl-sdk-sample-apps">Open Github Repository</a>
+                <div>
+                  <br>
+                  
                 </div>
+                
+<div>
+  <p>You need to replace the VPM and API Key which you created from UNL Studio</p><br>
+  < string name="api_key">UNL_API_KEY< string/>
+  <br>
+  < string name="vpm_id">UNL_VPM_ID < string/>
+</div>
+
+               </div>
+
+                
               </div>
             </div>
             <div class="fixed block none-mm mx24 my24 z5 bottom right">

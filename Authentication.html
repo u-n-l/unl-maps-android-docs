@@ -23,6 +23,7 @@
       name="msapplication-config"
       content="https://u-n-l.github.io/unl-map-js-docs/assets/favicon/browserconfig.xml?v=rMBbQAR5BL"
     /> -->
+    <link rel="icon" href="../../../images/favicon.svg" type="image/svg">
     <meta data-react-helmet="true" name="theme-color" content="#ffffff" />
     <meta data-react-helmet="true" name="twitter:site" content="@MapLibre" />
     <meta data-react-helmet="true" property="og:site_name" content="UNL" />
@@ -1015,7 +1016,8 @@
 
       @media screen and (min-width: 800px) {
         .limiter--wide {
-          width: 91.666666666% !important;
+          /* width: 91.666666666% !important; */
+          width: 98% !important;
         }
       }
 
@@ -1709,35 +1711,7 @@
                                 >
                               </div>
                             </li>
-                            <li>
-                              <div
-                                class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 flex-parent flex-parent--space-between-main"
-                              >
-                                <a
-                                  href="./API-Reference.html"
-                                  class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm"
-                                  style="letter-spacing: 0.025em"
-                                  >API Reference</a
-                                ><button
-                                  class="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
-                                  aria-label="Toggle API Reference menu"
-                                  aria-controls="menu-api-reference"
-                                  aria-expanded="false"
-                                >
-                                  <svg
-                                    role="presentation"
-                                    focusable="false"
-                                    class="events-none icon inline-block align-t"
-                                    style="width: 18px; height: 18px"
-                                  >
-                                    <use
-                                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                                      xlink:href="#icon-chevron-down"
-                                    ></use>
-                                  </svg>
-                                </button>
-                              </div>
-                            </li>
+                            
                             <li>
                               <div
                                 class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
@@ -1746,10 +1720,11 @@
                                   href="./UNL-Plugins.html"
                                   class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm"
                                   style="letter-spacing: 0.025em"
-                                  >UNL Plugins</a
+                                  >Custom Plugins</a
                                 >
                               </div>
                             </li>
+                            
                             <li>
                               <div
                                 class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
@@ -1767,7 +1742,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="flex-child flex-child--grow" style="width: 100%">
+                  <div class="flex-child flex-child--grow" style="width: 100%; padding:0 25px;">
                     <div
                       class="dr-ui--breadcrumb pt3 pb12 none block-mm"
                       data-swiftype-index="false"
@@ -2048,7 +2023,7 @@
                                 generate and copy the api key.
                               </p>
                               <p><img src="./images/6.gif" /></p>
-                              <br /><br /><br />
+                              <br /><br />
                             </div>
                           </div>
                         </div>
@@ -2085,6 +2060,8 @@
           <div
             class="shell-flex-child shell-flex-child--no-shrink shell-wrapper"
           >
+
+          
             <!-- <footer
               id="page-footer"
               class="shell-py12 shell-py48-ml"

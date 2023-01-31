@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>REASON_SERVER</title>
-    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+      <link href="../../../images/favicon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "../../../";</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
     if (storage == null) {
@@ -31,25 +31,456 @@
 <script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
 <script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
 </head>
+<style>
+  a,
+  aside,
+  code,
+  div,
+  fieldset,
+  footer,
+  h1,
+  h2,
+  header,
+  html,
+  label,
+  li,
+  nav,
+  p,
+  pre,
+  span,
+  ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+
+  body {
+    padding: 0;
+    vertical-align: baseline;
+  }
+
+  aside,
+  footer,
+  header,
+  main,
+  nav,
+  pre {
+    display: block;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2 {
+    font-weight: 400;
+  }
+
+  *,
+  ::after,
+  ::before,
+  :after,
+  :before {
+    box-sizing: inherit;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  body,
+  button {
+    margin: 0;
+    border: 0;
+  }
+
+  button {
+    background: 0 0;
+    color: inherit;
+    font: inherit;
+    padding: 0;
+    width: auto;
+    text-align: left;
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 0;
+  }
+
+  button:disabled {
+    cursor: default;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  pre {
+    white-space: pre-wrap;
+    tab-size: 2;
+  }
+
+  body
+ {
+    /* color: #1f3349; */
+    font-size: 15px;
+    line-height: 24px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .txt-l {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .txt-uppercase {
+    text-transform: uppercase !important;
+  }
+
+  .border-b {
+    border-style: solid;
+    border-bottom-width: 1px;
+  }
+
+  .round {
+    border-radius: 4px !important;
+  }
+
+  .round-full {
+    border-radius: 9999px !important;
+  }
+
+  .limiter {
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 640px) {
+    .limiter {
+      margin-left: auto;
+      margin-right: auto;
+      width: 91.666666666%;
+      max-width: 1200px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .limiter {
+      width: 83.33333333%;
+    }
+  }
+
+  .flex-parent {
+    display: -webkit-flex !important;
+    display: flex !important;
+  }
+
+
+  .flex-parent--space-between-main {
+    -webkit-justify-content: space-between !important;
+    justify-content: space-between !important;
+  }
+
+  .flex-child {
+    display: block;
+    max-width: 100%;
+  }
+
+  .flex-child--grow {
+    -webkit-flex-grow: 1 !important;
+    flex-grow: 1 !important;
+    min-width: 0;
+  }
+  .mx-neg12 {
+    margin-left: -12px !important;
+    margin-right: -12px !important;
+  }
+
+  .mb6 {
+    margin-bottom: 6px !important;
+  }
+
+  .py3 {
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+  }
+
+  .py6 {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+
+  .px12 {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .w-full {
+    width: 100% !important;
+  }
+
+
+  @media screen and (min-width: 640px) {
+    .py3-mm {
+      padding-top: 3px !important;
+      padding-bottom: 3px !important;
+    }
+  
+  }
+
+  @font-face {
+    font-family: "Cera";
+    font-weight: 700;
+    src: url(https://api.mapbox.com/mapbox-assembly/fonts/CeraPRO-Bold.v1.woff2)
+        format("woff2"),
+      url(https://api.mapbox.com/mapbox-assembly/fonts/CeraPRO-Bold.v1.woff)
+        format("woff");
+  }
+
+  @font-face {
+    font-family: "Cera";
+    font-style: italic;
+    src: url(https://api.mapbox.com/mapbox-assembly/fonts/CeraPRO-BoldItalic.v1.woff2)
+        format("woff2"),
+      url(https://api.mapbox.com/mapbox-assembly/fonts/CeraPRO-BoldItalic.v1.woff)
+        format("woff");
+  }
+
+  body {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  .txt-fancy {
+    font-family: "Cera", "Open Sans", sans-serif !important;
+    font-weight: 700;
+  }
+
+  .color-blue {
+    color: #4264fb !important;
+  }
+
+  .color-darken75 {
+    color: rgba(31, 51, 73, 0.75) !important;
+  }
+
+  .bg-blue-faint {
+    background-color: #edf0fd !important;
+  }
+
+  .border--darken10 {
+    border-color: rgba(31, 51, 73, 0.1) !important;
+  }
+
+  .color-blue-on-hover:hover {
+    color: #4264fb !important;
+  }
+
+  @media screen and (min-width: 640px) {
+    .limiter--wide {
+      max-width: 1800px !important;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .limiter--wide {
+      /* width: 91.666666666% !important; */
+      width: 98% !important;
+    }
+  }
+  
+ .shell-flex-child {
+    display: block;
+    max-width: 100%;
+  }
+
+
+  @media screen and (min-width: 1200px) {
+  .shell-ml18-mxl {
+      margin-left: 18px !important;
+    }
+  }
+
+  .shell-animated-menu,
+  .shell-mobile-nav__backdrop {
+    transition: opacity 0.25s, visibility 0.25s, transform 0.25s,
+      -webkit-transform 0.25s;
+  }
+
+  .shell-mobile-nav__backdrop {
+    will-change: opacity;
+  }
+
+  .shell-animated-menu {
+    pointer-events: none;
+    -webkit-transform: translate(0, 0, 0) scale(0.95);
+    transform: translate(0, 0, 0) scale(0.95);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+  }
+
+  .shell-animated-menu,
+  .shell-mobile-nav__backdrop {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .footer {
+    display: -webkit-flex !important;
+    display: flex !important;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+</style>
 <body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-            <a href="../../../index.html">
-                    <span>UnlMapAndroidSDK</span>
-            </a>
+<header
+    class="shell-absolute shell-w-full shell-z1"
+    data-swiftype-index="false"
+    >
+    
+    <div
+      class="shell-none limiter limiter--wide shell-mt24 shell-flex-parent-mm shell-flex-parent--center-cross"
+    >
+      <div
+        class="shell-flex-child shell-flex-child--grow shell-flex-parent shell-flex-parent--center-cross shell-flex-parent--end-main"
+      >
+        <div
+          class="shell-flex-parent shell-flex-parent--center-cross shell-flex-parent--end-main"
+        ></div>
+      </div>
+      <div
+        class="shell-flex-child shell-ml6 shell-ml12-ml shell-ml18-mxl"
+      ></div>
     </div>
-    <div>
+    
+    
+    <div
+      class="shell-z1 shell-absolute shell-top shell-left shell-right shell-w-full"
+    >
+      <div
+        id="mobile-nav-backdrop"
+        data-test="mobile-nav-backdrop"
+        class="shell-absolute shell-bottom shell-left shell-right shell-mobile-nav__backdrop"
+        style="
+          top: 72px;
+          background-image: linear-gradient(
+            to bottom,
+            transparent,
+            rgba(31, 51, 73, 0.5)
+          );
+        "
+      ></div>
+      <div
+        id="mobile-nav-menu"
+        data-test="mobile-nav-menu"
+        class="shell-absolute shell-z5 shell-w-full shell-animated-menu"
+        style="top: 0; right: 0"
+      >
+        <div
+          class="shell-shadow-darken10-bold shell-bg-white shell-clip shell-px24"
+          style="padding-top: 72px"
+        >
+         
+        </div>
+      </div>
     </div>
-    <div class="pull-right d-flex">
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
-        <div id="searchBar"></div>
-    </div>
-</div>
+    </header>
 <div id="container">
-    <div id="leftColumn">
-        <div id="sideMenu"></div>
+   <div id="leftColumn">
+    <div class="">
+      <div class="mb6 border-b border--darken10">
+        <div class="mb6">
+          <div class="dr-ui--product-menu">
+            <a
+              class="txt-fancy txt-l block color-blue-on-hover"
+              >UNL Android Sdk </a
+            >
+          </div>
+        </div>
+      </div>
+      <nav class="mx-neg12">
+
+        <ul>
+          
+          <li>
+            <div
+              class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 bg-blue-faint color-blue"
+            >
+              <a
+                href="../../../index.html"
+                class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm"
+                style="letter-spacing: 0.025em"
+                >Getting started</a
+              >
+            </div>
+          </li>
+          <li>
+            <div
+              class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
+            >
+              <a
+                href="../../../Authentication.html"
+                class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm"
+                style="letter-spacing: 0.025em"
+                >Authentication</a
+              >
+            </div>
+          </li>
+          <li>
+            <div
+              class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 flex-parent flex-parent--space-between-main"
+            >
+              <a
+                href="../../../API-Reference.html"
+                class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm"
+                style="letter-spacing: 0.025em"
+                >API Reference</a
+              >
+            </div>
+          </li>
+          <li>
+                              <div
+                                class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
+                              >
+                                <a
+                                  href="./UNL-Plugins.html"
+                                  class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm"
+                                  style="letter-spacing: 0.025em"
+                                  >Custom Plugins</a
+                                >
+                              </div>
+                            </li>
+          <li class="Set_Unl_Link">
+            <div id="sideMenu"></div>
+          </li>  
+            <li>
+              <div
+                class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
+              >
+                <a
+                  href="../../../Examples.html"
+                  class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm"
+                  style="letter-spacing: 0.025em"
+                  >Examples</a
+                >
+              </div>
+            </li>       
+        </ul>
+      </nav>
     </div>
+    
+
+  </div>
     <div id="main">
 <div class="main-content" id="content" pageIds="UnlMapAndroidSDK::com.mapbox.mapboxsdk.offline/OfflineRegionError/REASON_SERVER/#/PointingToDeclaration//2110661137">
   <div class="breadcrumbs"><a href="../../../index.html">UnlMapAndroidSDK</a><span class="delimiter">/</span><a href="../index.html">com.mapbox.mapboxsdk.offline</a><span class="delimiter">/</span><a href="index.html">OfflineRegionError</a><span class="delimiter">/</span><span class="current">REASON_SERVER</span></div>
@@ -59,10 +490,10 @@
   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":UnlMapAndroidSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-r-e-a-s-o-n_-s-e-r-v-e-r.html">REASON_SERVER</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token operator"> = </span><span class="token string">&quot;REASON_SERVER&quot;</span></div></div></div>
 </div>
       <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
-                class="pull-right"><span>Generated by </span><a
-                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
-      </div>
+    <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
+            class="pull-right"><span>Generated by </span><a
+            href="https://unl.global/"><span>UNL GLOBAL</span><span class="padded-icon"></span></a></span>
+  </div>
     </div>
 </div>
 </body>

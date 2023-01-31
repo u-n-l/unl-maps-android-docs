@@ -157,8 +157,9 @@ html ::-webkit-scrollbar-thumb {
 }
 
 .breadcrumbs, .breadcrumbs a, .breadcrumbs a:hover {
-    margin-top: var(--breadcrumb-margin);
+    /* margin-top: var(--breadcrumb-margin); */
     color: var(--breadcrumb-font-color);
+    font-weight: bold;
     overflow-wrap: break-word;
 }
 
@@ -1341,7 +1342,7 @@ div.runnablesample {
 
 
 .Set_heding_h1{
-    padding:  0 0 20px 0;
+    padding:  0 0 10px 0;
     font-weight: 600;
 }
 .Set_gatting_heading{
@@ -1359,4 +1360,17 @@ div.runnablesample {
     margin-top: 3px;
     border-radius: 5px;
     background-color: rgba(39, 40, 44, .05);
+}
+
+.Set_AddMaven{
+    background-color: #fafafa;
+    padding: 30px;
+    width: 100%;
+    height: fit-content;
+    border: 1px solid #999;
+    margin-top: 20px;
+
+}
+.set_code_div{
+    padding-left: 20px !important;
 }

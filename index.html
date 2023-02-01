@@ -6,6 +6,13 @@
     <title data-react-helmet="true">
       Getting started | UNL Android Sdk Docs | UNL
     </title>
+    <link rel="icon" href="data:,">
+     <!-- <meta
+      data-react-helmet="true"
+      name="msapplication-config"
+      content="https://u-n-l.github.io/unl-map-js-docs/assets/favicon/browserconfig.xml?v=rMBbQAR5BL"
+    /> -->
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.svg"/>
 
     <meta data-react-helmet="true" charset="utf-8" />
     <meta
@@ -18,12 +25,8 @@
       name="msapplication-TileColor"
       content="#ffffff"
     />
-    <!-- <meta
-      data-react-helmet="true"
-      name="msapplication-config"
-      content="https://u-n-l.github.io/unl-map-js-docs/assets/favicon/browserconfig.xml?v=rMBbQAR5BL"
-    /> -->
-    <link rel="icon" href="../../../images/favicon.svg" type="image/svg" />
+   
+
     <meta data-react-helmet="true" name="theme-color" content="#ffffff" />
     <meta data-react-helmet="true" name="twitter:site" content="@MapLibre" />
     <meta data-react-helmet="true" property="og:site_name" content="UNL" />
@@ -2110,7 +2113,7 @@
                     <div id="docs-content">
                       <div class="col prose col--8-mxl col--12">
                         <!-- <h1 class="txt-fancy">Getting started</h1> -->
-<!-- changes by suyash -->
+<!-- changes by lokesh -->
 
                         <div class="flex-parent flex-parent--center-cross">
                           <div class="flex-child flex-child--grow">
@@ -2302,10 +2305,10 @@
                         
                       </div>
                       
-<!-- changes by suyash -->
+<!-- changes by lokesh -->
 <hr style="margin-top: 30px; margin-bottom: 30px;>
 
-<!-- changes by suyash -->
+<!-- changes by lokesh -->
 
                       <div id="main" style="padding: 25px">
                         <!-- <h1 id="introduction" class="Set_heding_h1">
@@ -2367,7 +2370,7 @@
 
 
 
-                        <!-- changes by suyash -->
+                        <!-- changes by lokesh -->
                         <!-- <h1 id="getting-started" class="Set_gatting_heading">Getting started</h1> -->
                         <h3 id="installation" class="Set_heding_h1">
                           Installation
@@ -2380,29 +2383,29 @@
                                       <h4 style="font-size: 20px;"> implementation &#39;com.github.u-n-l:unl-maps-sdk-android:Tag&#39;</h4> 
                                     
                                     </code></pre> -->
-<!-- changes by suyash -->
+<!-- changes by lokesh -->
 
 <div class="Set_AddMaven">
   <p style="font-size: 20px;"> implementation &#39;com.github.u-n-l:unl-maps-sdk-android:Tag&#39;</p>
 </div>
 
                         <h3 id="add-maven-urls">Add Maven URLs</h3>
-                        <pre><code>    allprojects {
-                                        repositories {
-                                                 ....
-                                                 maven { url &#39;https://jitpack.io&#39; }
+                        <pre><code>  allprojects {
+                            repositories {
+                                         ....
+                                         maven { url &#39;https://jitpack.io&#39; }
                                     
-                                                 maven {
-                                                    name = &quot;GitHubPackages&quot;
-                                                    url = uri(&quot;https://maven.pkg.github.com/u-n-l/core-java&quot;)
-                                                    credentials {
-                                                        username = &lt;YOUR_USERNAME&gt;
-                                                        password = &lt;YOUR_PASSWORD&gt;
-                                                    }
-                                                }
-                                                .....
-                                            }
-                                        }
+                                          maven {
+                                               name = &quot;GitHubPackages&quot;
+                                               url = uri(&quot;https://maven.pkg.github.com/u-n-l/core-java&quot;)
+                                               credentials {
+                                                    username = &lt;YOUR_USERNAME&gt;
+                                                    password = &lt;YOUR_PASSWORD&gt;
+                                                 }
+                                             }
+                                          .....
+                                       }
+                                    }
                                     </code></pre>
                                  
                            <h3

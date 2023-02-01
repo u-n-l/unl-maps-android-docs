@@ -11,7 +11,7 @@
   <meta data-react-helmet="true" name="msapplication-TileColor" content="#ffffff" />
   <!-- <meta data-react-helmet="true" name="msapplication-config"
     content="https://u-n-l.github.io/unl-map-js-docs/assets/favicon/browserconfig.xml?v=rMBbQAR5BL" /> -->
-    <link rel="icon" href="../../../images/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
 
   <meta data-react-helmet="true" name="theme-color" content="#ffffff" />
   <meta data-react-helmet="true" name="twitter:site" content="@MapLibre" />
@@ -1100,7 +1100,7 @@ if (storage == null) {
     code[class*="language-"],
     pre[class*="language-"] {
       color: #273d56;
-      background: 0 0;
+      /* background: 0 0; */
       font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
       text-align: left;
       white-space: pre;
@@ -1119,7 +1119,7 @@ if (storage == null) {
       margin: 0.5em 0;
       overflow: auto;
       border-radius: 0.3em;
-      background: #272822;
+      /* background: #272822; */
     }
 
     .token.punctuation {
@@ -1743,422 +1743,186 @@ if (storage == null) {
                     <div class="col prose col--8-mxl col--12">
                       <h1 class="txt-fancy">Custom Plugins</h1>
                     </div>
-                    <div class="grid grid--gut60">
-                      <div class="dr-ui--page-layout-aside col col--12 col--4-mxl">
-                        <aside data-swiftype-index="false"
-                          class="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl" style="top: 10px">
-                          <nav aria-labelledby="on-this-page" class="dr-ui--on-this-page mb36-mxl mb18">
-                            <h2 id="on-this-page" class="unprose txt-m txt-bold mb6">
-                              On this page
-                            </h2>
-                            <ul class="">
-                              <li class="mb3 mb6-mxl">
-                                <a style="word-break: break-word" href="#unl-grid-and-cells"
-                                  class="link inline-block link--gray">UNL grid and cells</a>
-                              </li>
-                              <li class="mb3 mb6-mxl">
-                                <a style="word-break: break-word" href="#tiles-selector"
-                                  class="link inline-block link--gray">Tiles selector</a>
-                                <ul class="none my6">
-                                  <li class="mb3">
-                                    <a style="word-break: break-word" href="#api-methods"
-                                      class="link inline-block link--gray">API Methods</a>
-                                  </li>
-                                  <li class="mb3">
-                                    <a style="word-break: break-word" href="#setstyle-maptile--void"
-                                      class="link inline-block link--gray">set(style: MapTile) =&gt; void</a>
-                                  </li>
-                                </ul>
-                              </li>
-                              <li class="mb3 mb6-mxl">
-                                <a style="word-break: break-word" href="#indoor-maps-overlay"
-                                  class="link inline-block link--gray">Indoor maps overlay</a>
-                              </li>
-                              <li class="mb3 mb6-mxl">
-                                <a style="word-break: break-word" href="#draft-shapes"
-                                  class="link inline-block link--gray">Draft shapes</a>
-                              </li>
-                            </ul>
-                          </nav>
-                        </aside>
-                      </div>
-                      <div class="col col--8-mxl col--12 prose">
-                        <div class="">
-                          <div>
-                            <p>
-                              On top of maplibre-gl-js, this package exposes
-                              the following plugins that can be initialised
-                              during the map instantiation with the default
-                              options or added later using the
-                              <code>addControl</code> function on the map
-                              reference.
-                            </p>
-                            <h2 id="unl-grid-and-cells" class="anchor">
-                              <a href="#unl-grid-and-cells" class="unprose color-blue-on-hover">UNL grid and cells</a>
-                            </h2>
-                            <p>
-                              Grid and cells control can be enabled during the
-                              <code>UnlSdk.Map</code> initialisation by
-                              passing the <code>gridControl</code> option
-                              <code>true</code>. With this approach, the grid
-                              &amp; cells control will be initialised with the
-                              default options. The control&#x27;s default
-                              position is <code>&#x27;top-right&#x27;</code>.
-                            </p>
-                            <pre class="language-js"><code class="language-js"><span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UnlSdk<span class="token punctuation">.</span>Map</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-<span class="token spread operator">...</span>
-<span class="token literal-property property">gridControl</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-<span class="token spread operator">...</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-                            <p>
-                              It can also be added after the initialisation by
-                              calling the <code>addControl</code> function on
-                              the map reference:
-                            </p>
-                            <pre class="language-js"><code class="language-js"><span class="token keyword module">import</span> <span class="token imports"><span class="token maybe-class-name">UnlSdk</span></span> <span class="token keyword module">from</span> <span class="token string">&quot;unl_map_sdk&quot;</span><span class="token punctuation">;</span>
-<span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UnlSdk<span class="token punctuation">.</span>Map</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-<span class="token spread operator">...</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<!-- -->map<span class="token punctuation">.</span><span class="token method function property-access">addControl</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">UnlSdk<span class="token punctuation">.</span>GridControl</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">lineColor</span><span class="token operator">:</span> <span class="token string">&quot;#FF0000&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">cellFillColor</span><span class="token operator">:</span> <span class="token string">&quot;#00FF00&quot;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;bottom-right&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-                            <p>
-                              If the second approach is chosen, the following
-                              options can be specified during the
-                              <code>GridControl</code> initialisation:
-                            </p>
-                            <div class="scroll-auto mb18">
-                              <table>
-                                <thead>
-                                  <tr>
-                                    <th>Option</th>
-                                    <th>Type</th>
-                                    <th>Default</th>
-                                    <th>Description</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>defaultPrecision</td>
-                                    <td><code>CellPrecision</code></td>
-                                    <td>9</td>
-                                    <td>
-                                      Default precision of the cells. It can
-                                      be changed manually via the grid
-                                      selector
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>lineColor</td>
-                                    <td><code>string</code></td>
-                                    <td>&quot;#C0C0C0&quot;</td>
-                                    <td>Grid line&#x27;s colour</td>
-                                  </tr>
-                                  <tr>
-                                    <td>lineWidth</td>
-                                    <td><code>number</code></td>
-                                    <td>0.5</td>
-                                    <td>Grid line&#x27;s width</td>
-                                  </tr>
-                                  <tr>
-                                    <td>cellFillColor</td>
-                                    <td><code>string</code></td>
-                                    <td>&quot;#FFB100&quot;</td>
-                                    <td>Cell&#x27;s colour</td>
-                                  </tr>
-                                  <tr>
-                                    <td>cellBorderColor</td>
-                                    <td><code>string</code></td>
-                                    <td>&quot;#FFB100&quot;</td>
-                                    <td>Cell&#x27;s border colour</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                            <p>
-                              If GridControl is enabled, the cell will get
-                              highlighted by clicking on the map. It will
-                              render a popup displaying the location id of the
-                              corresponding selected cell. For performance
-                              reasons, the grid lines will be generated at
-                              certain zoom levels, dependant on the selected
-                              precision, according to the following table:
-                            </p>
-                            <div class="scroll-auto mb18">
-                              <table>
-                                <thead>
-                                  <tr>
-                                    <th>Precision</th>
-                                    <th>Zoom level</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>10</td>
-                                    <td>20</td>
-                                  </tr>
-                                  <tr>
-                                    <td>9</td>
-                                    <td>18</td>
-                                  </tr>
-                                  <tr>
-                                    <td>8</td>
-                                    <td>16</td>
-                                  </tr>
-                                  <tr>
-                                    <td>7</td>
-                                    <td>14</td>
-                                  </tr>
-                                  <tr>
-                                    <td>6</td>
-                                    <td>12</td>
-                                  </tr>
-                                  <tr>
-                                    <td>5</td>
-                                    <td>10</td>
-                                  </tr>
-                                  <tr>
-                                    <td>4</td>
-                                    <td>8</td>
-                                  </tr>
-                                  <tr>
-                                    <td>3</td>
-                                    <td>4</td>
-                                  </tr>
-                                  <tr>
-                                    <td>2</td>
-                                    <td>3</td>
-                                  </tr>
-                                  <tr>
-                                    <td>1</td>
-                                    <td>2</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                            <p>
-                              <img
-                                src="../../../raw.githubusercontent.com/u-n-l/unl-map-js-docs/main/docs/gifs/grid_lines.gif?raw=true"
-                                alt="Grid lines and cell" />
-                            </p>
-                            <p>
-                              <img
-                                src="../../../raw.githubusercontent.com/u-n-l/unl-map-js-docs/main/docs/gifs/grid_selector.gif?raw=true"
-                                alt="Grid precision selection" />
-                            </p>
-                            <h2 id="tiles-selector" class="anchor">
-                              <a href="#tiles-selector" class="unprose color-blue-on-hover">Tiles selector</a>
-                            </h2>
-                            <p>
-                              Tile selector control can be enabled during the
-                              <code>UnlSdk.Map</code> initialisation by
-                              passing the
-                              <code>tilesSelectorControl</code> option
-                              <code>true</code>. With this approach, the tile
-                              selector control will be initialised with the
-                              default options. The control&#x27;s default
-                              position is <code>&#x27;top-left&#x27;</code>.
-                            </p>
-                            <pre class="language-js"><code class="language-js"><span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UnlSdk<span class="token punctuation">.</span>Map</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-<span class="token spread operator">...</span>
-<span class="token literal-property property">tilesSelectorControl</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-<span class="token spread operator">...</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-                            <p>
-                              It can also be added later by calling the
-                              <code>addControl</code> function on the map
-                              reference:
-                            </p>
-                            <pre class="language-js"><code class="language-js"><span class="token keyword module">import</span> <span class="token imports"><span class="token maybe-class-name">UnlSdk</span></span> <span class="token keyword module">from</span> <span class="token string">&quot;unl_map_sdk&quot;</span><span class="token punctuation">;</span>
-<!-- -->
-<span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UnlSdk<span class="token punctuation">.</span>Map</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-<span class="token spread operator">...</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<!-- -->
-<!-- -->map<span class="token punctuation">.</span><span class="token method function property-access">addControl</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">UnlSdk<span class="token punctuation">.</span>TilesSelectorControl</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">tiles</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;vectorial&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;satellite&quot;</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;bottom-right&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-                            <p>
-                              If the second approach is chosen, the following
-                              options can be specified during the
-                              <code>TilesSelectorControl</code>
-                              initialisation:
-                            </p>
-                            <div class="scroll-auto mb18">
-                              <table>
-                                <thead>
-                                  <tr>
-                                    <th>Option</th>
-                                    <th>Type</th>
-                                    <th>Default</th>
-                                    <th>Description</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>tiles</td>
-                                    <td>MapTiles[]</td>
-                                    <td>
-                                      [&quot;vectorial&quot;,
-                                      &quot;traffic&quot;,
-                                      &quot;terrain&quot;,
-                                      &quot;satellite&quot;, &quot;base&quot;]
-                                    </td>
-                                    <td>
-                                      The options that will be included in the
-                                      tiles selector
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>displayControlsDefault</td>
-                                    <td>boolean</td>
-                                    <td>true</td>
-                                    <td>
-                                      Display the default tile selector UI
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                            <p>
-                              <img
-                                src="../../../raw.githubusercontent.com/u-n-l/unl-map-js-docs/main/docs/gifs/tile_selector.gif?raw=true"
-                                alt="Tiles selector" />
-                            </p>
-                            <h3 id="api-methods" class="anchor">
-                              <a href="#api-methods" class="unprose color-blue-on-hover">API Methods</a>
-                            </h3>
-                            <p>
-                              <code>new TilesSelectorControl()</code> returns
-                              an instance of the TilesSelectorControl with the
-                              following API:
-                            </p>
-                            <h3 id="setstyle-maptile--void" class="anchor">
-                              <a href="#setstyle-maptile--void"
-                                class="unprose color-blue-on-hover"><code>set(style: MapTile) =&gt; void</code></a>
-                            </h3>
-                            <p>
-                              This method takes a
-                              <code>MapTile</code> parameter and updates the
-                              selected tile from the map.
-                            </p>
-                            <p>
-                              The supported MapTile values are:
-                              <code>vector</code>, <code>traffic</code>,
-                              <code>terrain</code>, <code>satellite</code>,
-                              <code>base</code>.
-                            </p>
-                            <p>Example</p>
-                            <pre class="language-js"><code class="language-js"><span class="token keyword">const</span> tilesSelectorControl <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UnlSdk<span class="token punctuation">.</span>TilesSelectorControl</span><span class="token punctuation">(</span>
-<!-- -->  <span class="token punctuation">{</span> <span class="token literal-property property">displayControlsDefault</span><span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<!-- -->  <span class="token string">&quot;top-left&quot;</span>
-<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<!-- -->
-<!-- -->map<span class="token punctuation">.</span><span class="token method function property-access">addControl</span><span class="token punctuation">(</span>tilesSelectorControl<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<!-- -->
-<!-- -->mapTilesControl<span class="token punctuation">.</span><span class="token method function property-access">setStyle</span><span class="token punctuation">(</span><span class="token string">&quot;terrain&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-                            <h2 id="indoor-maps-overlay" class="anchor">
-                              <a href="#indoor-maps-overlay" class="unprose color-blue-on-hover">Indoor maps overlay</a>
-                            </h2>
-                            <p>
-                              Indoor maps overlay control can be enabled
-                              during the map initialisation by passing the
-                              <code>indoorMapsControl</code> option
-                              <code>true</code>. The tile selector control
-                              will be initialised with the default options.
-                              The control&#x27;s default position is
-                              <code>&#x27;top-right&#x27;</code>.
-                            </p>
-                            <p>
-                              It can also be added later by calling the
-                              <code>addControl</code> function on the map
-                              reference:
-                            </p>
-                            <pre class="language-js"><code class="language-js"><span class="token keyword module">import</span> <span class="token imports"><span class="token maybe-class-name">UnlSdk</span></span> <span class="token keyword module">from</span> <span class="token string">&quot;unl_map_sdk&quot;</span><span class="token punctuation">;</span>
-<!-- -->
-<span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UnlSdk<span class="token punctuation">.</span>Map</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-<span class="token spread operator">...</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<!-- -->
-<!-- -->map<span class="token punctuation">.</span><span class="token method function property-access">addControl</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">UnlSdk<span class="token punctuation">.</span>IndoorControl</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;bottom-right&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-                            <p>
-                              Enabling the indoor maps overlay, will fetch the
-                              venue maps and render the marker and outer area
-                              of the venues that were uploaded in the VPM
-                              whose id is passed as part of the map
-                              initialisation. By clicking on a venue, the full
-                              venue data will be downloaded, rendering the
-                              venue units and facilities, along with the level
-                              selector buttons.
-                            </p>
-                            <p>
-                              <img
-                                src="../../../raw.githubusercontent.com/u-n-l/unl-map-js-docs/main/docs/gifs/indoor_overlays.gif?raw=true"
-                                alt="Indoor maps overlay" />
-                            </p>
-                            <h2 id="draft-shapes" class="anchor">
-                              <a href="#draft-shapes" class="unprose color-blue-on-hover">Draft shapes</a>
-                            </h2>
-                            <p>
-                              Draft shapes control can be enabled during the
-                              map initialisation by passing the
-                              <code>draftShapesControl</code> option
-                              <code>true</code>. In this way, the control will
-                              be enabled with the default parameters. The
-                              default position of the control is
-                              <code>&#x27;top-left&#x27;</code>.
-                            </p>
-                            <p>
-                              It can also be added later by calling the
-                              <code>addControl</code> function on the map
-                              reference:
-                            </p>
-                            <pre class="language-js"><code class="language-js"><span class="token keyword module">import</span> <span class="token imports"><span class="token maybe-class-name">UnlSdk</span></span> <span class="token keyword module">from</span> <span class="token string">&quot;unl_map_sdk&quot;</span><span class="token punctuation">;</span>
-<!-- -->
-<span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UnlSdk<span class="token punctuation">.</span>Map</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-<span class="token spread operator">...</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<!-- -->
-<!-- -->map<span class="token punctuation">.</span><span class="token method function property-access">addControl</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">UnlSdk<span class="token punctuation">.</span>DraftShapesControl</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;bottom-right&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-                            <p>
-                              Enabling the draft shapes control, will fetch
-                              and render all the shapes added in the VPM whose
-                              id is passed during the map initialisation.
-                              Additionally, by clicking on a shape, it can be
-                              moved, edited or deleted. New shapes can be
-                              created: polygon, circle or rectangles, via the
-                              three corresponding control buttons and they
-                              will get saved in the same VPM.
-                            </p>
-                            <p>
-                              <img
-                                src="../../../raw.githubusercontent.com/u-n-l/unl-map-js-docs/main/docs/gifs/draft_shapes.gif?raw=true"
-                                alt="Draft shapes creation &amp; editing and delete" />
-                            </p>
-                            <br /><br />
-                            <div class="footer">
-                              <span class="go-to-top-icon"
-                                ><a href="#content" id="go-to-top-link"></a></span
-                              ><span>© 2022 Copyright</span
-                              ><span class="pull-right"
-                                ><span>Generated by </span
-                                ><a
-                                  ><span>UNL GLOBAL</span
-                                  ><span class="padded-icon"></span></a
-                              ></span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+
+<div>
+
+       <h3 id="custom-controls" style="font-size: 20px; font-weight: 600;">
+                          Custom controls
+                        </h1>
+                        <p style="padding-bottom: 20px;">
+                          For Custom controls, it can be accessed by assigning a
+                          class <code>UNLMapView</code>. For Example:
+                        </p>
+                        <pre><code class="language-Kotlin">   var mapView: UnlMapView
+                                    </code></pre>
+                        <h3 id="grid-controls">Grid Controls</h3>
+                        <p>
+                          Grid controls can be enabled in your activity
+                          initialisation by passing the
+                          <code>setGridControls</code> second param as
+                          <code>true</code>. With this approach, the grid
+                          control will be initialised with the default options.
+                        </p>
+                        <p>
+                          the following options can be specified during the
+                          <code>GridControl</code> initialisation:
+                        </p>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>Option</th>
+                              <th>Type</th>
+                              <th>Default</th>
+                              <th>Description</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>defaultPrecision</td>
+                              <td><code>CellPrecision</code></td>
+                              <td>9</td>
+                              <td>
+                                Default precision of the cells. It can be
+                                changed manually via the grid selector
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>lineColor</td>
+                              <td><code>ResourceColor</code></td>
+                              <td>default_grid_line_color</td>
+                              <td>Grid line&#39;s colour</td>
+                            </tr>
+                            <tr>
+                              <td>lineWidth</td>
+                              <td><code>Float </code></td>
+                              <td>1f</td>
+                              <td>Grid line&#39;s width</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <p>
+                          If GridControl is enabled, the grid lines will be
+                          generated at certain zoom levels, dependant on the
+                          selected precision, according to the following table:
+                        </p>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>Precision</th>
+                              <th>Zoom level</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>10</td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td>18</td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td>16</td>
+                            </tr>
+                            <tr>
+                              <td>7</td>
+                              <td>14</td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td>12</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>10</td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>8</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>4</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>3</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <h3 id="tiles-selector">
+                          Tiles selector
+                        </h3>
+                        <p>
+                          Tile selector can be enabled in your activity,
+                          initialisation by passing the
+                          <code>enableTileSelector</code> param
+                          <code>true</code>. With this approach, the tile
+                          selector control will be initialised with the default
+                          options.
+                        </p>
+                        <p>
+                          the following options can be specified during the
+                          <code>TilesSelectorControl</code> initialisation:
+                        </p>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>Option</th>
+                              <th>Type</th>
+                              <th>Default</th>
+                              <th>Description</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>tile</td>
+                              <td>[Enum]</td>
+                              <td>TERRAIN, VECTORIAL,BASE,TRAFFIC,SATELLITE</td>
+                              <td>
+                                The options that will be included in the tiles
+                                selector
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <h3 id="custom-tile-selector">Custom tile selector</h3>
+                        <p>
+                          <code>UnlMapView</code> also provide access to use
+                          custom tile selecter with the following function:
+                        </p>
+                        <h3 id="method-loadstyle">
+                          <code>Method loadStyle</code>
+                        </h3>
+                        <p>
+                          This method takes a <code>TileEnum</code> parameter
+                          and updates the selected tile from the map.
+                        </p>
+                        <p>
+                          The supported TileEnum values are:
+                          <code>TERRAIN</code>, <code>VECTORIAL</code>,
+                          <code>BASE</code>, <code>TRAFFIC</code>,
+                          <code>SATELLITE</code>.
+                        </p>
+                        <p>Example</p>
+                        <pre><code class="language-kotlin">
+                                    unlMap.loadStyle(TileEnum.BASE)
+                                    </code></pre>
+
+
+</div>
+
+                 
                   </div>
                 </div>
               </div>
             </div>
-            <div class="fixed block none-mm mx24 my24 z5 bottom right">
+            <!-- <div class="fixed block none-mm mx24 my24 z5 bottom right">
               <div class="block mx24 my24 z5">
                 <div class="inline-block">
                   <button type="button"
@@ -2171,7 +1935,7 @@ if (storage == null) {
                   </button>
                 </div>
               </div>
-            </div>
+            </div> -->
           </main>
         </div>
         

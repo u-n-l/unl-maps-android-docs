@@ -2454,7 +2454,10 @@ android.enableJetifier=true
                           // Need supportFragmentManager and Activity for showing some controls
                            unlMap.fm=supportFragmentManager
                            unlMap.activity=this
-                           unlMap.lifeCycleOwner=this         
+                           unlMap.lifeCycleOwner=this  
+                           //for enable Indoor map functionality
+                           unlMap.enableIndoorMap=true
+                           unlMap.viewLifecycle=this       
                           // enableTileSelector method is used to show TileSelector on UnlMapView or not.
                            unlMap.enableTileSelector(true)
 

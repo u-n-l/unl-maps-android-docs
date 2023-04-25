@@ -2442,15 +2442,13 @@ android.enableJetifier=true
                           super.onCreate(savedInstanceState)
 
                           // Initializing the UNL SDK
-                          UnlMap(applicationContext,getString(R.string.api_key),getString(R.string.vpm_id))
-                          setContentView(R.layout.activity)
-                                    
+                          UnlMap(applicationContext,getString(R.string.api_key),
+                          getString(R.string.vpm_id),EnvironmentType.SANDBOX)
+                          setContentView(R.layout.activity)         
                           //Getting Instance of `UnlMapView` from `activity.xml`
-                          val unlMap=findViewById&lt;UnlMapView&gt;(R.id.mapView)
-                                    
+                          val unlMap=findViewById&lt;UnlMapView&gt;(R.id.mapView)          
                           //This `getMapAsync` method is used for map loaded to view.
                            unlMap.getMapAsync {
-
                           // Need supportFragmentManager and Activity for showing some controls
                            unlMap.fm=supportFragmentManager
                            unlMap.activity=this
@@ -2458,12 +2456,10 @@ android.enableJetifier=true
                            //for enable Indoor map functionality
                            unlMap.enableIndoorMap=true
                            unlMap.viewLifecycle=this       
-                          // enableTileSelector method is used to show TileSelector on UnlMapView or not.
+                         //enableTileSelector method is used to show TileSelector on UnlMapView or not.
                            unlMap.enableTileSelector(true)
-
                           // setGridControls method is used to show GridControls on UnlMapView or not.
                            unlMap.setGridControls(this,true)
-
                           // setGridControls method is used to set position for TileSelector.
                            unlMap.setTileSelectorGravity(Gravity.RIGHT)
                   }

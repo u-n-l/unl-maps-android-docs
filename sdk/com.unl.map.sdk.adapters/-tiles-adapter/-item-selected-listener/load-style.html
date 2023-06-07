@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <title>loadStyle</title>
-    <!--   <link href="../../../../images/favicon.svg" rel="icon" type="image/svg"> -->
-    <link rel="icon" href="../../../../images/favicon.svg" type="image/svg">
-    <script>var pathToRoot = "../../../../";</script>
-    <script>const storage = localStorage.getItem("dokka-dark-mode")
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+  <title>loadStyle</title>
+  <!--   <link href="../../../../images/favicon.svg" rel="icon" type="image/svg"> -->
+  <link rel="icon" href="../../../../images/favicon.svg" type="image/svg">
+  <script>var pathToRoot = "../../../../";</script>
+  <script>const storage = localStorage.getItem("dokka-dark-mode")
     if (storage == null) {
-        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-        if (osDarkSchemePreferred === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
+      const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+      if (osDarkSchemePreferred === true) {
+        document.getElementsByTagName("html")[0].classList.add("theme-dark")
+      }
     } else {
-        const savedDarkMode = JSON.parse(storage)
-        if(savedDarkMode === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
+      const savedDarkMode = JSON.parse(storage)
+      if (savedDarkMode === true) {
+        document.getElementsByTagName("html")[0].classList.add("theme-dark")
+      }
     }
-    </script>
-<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async="async"></script>
-<link href="../../../../styles/style.css" rel="Stylesheet">
-<link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet">
-<link href="../../../../styles/main.css" rel="Stylesheet">
-<link href="../../../../styles/prism.css" rel="Stylesheet">
-<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
-<script type="text/javascript" src="../../../../scripts/clipboard.js" async="async"></script>
-<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async="async"></script>
-<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async="async"></script>
-<script type="text/javascript" src="../../../../scripts/main.js" defer="defer"></script>
-<script type="text/javascript" src="../../../../scripts/prism.js" async="async"></script>
-<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+  </script>
+  <script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async="async"></script>
+  <link href="../../../../styles/style.css" rel="Stylesheet">
+  <link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet">
+  <link href="../../../../styles/main.css" rel="Stylesheet">
+  <link href="../../../../styles/prism.css" rel="Stylesheet">
+  <link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+  <script type="text/javascript" src="../../../../scripts/clipboard.js" async="async"></script>
+  <script type="text/javascript" src="../../../../scripts/navigation-loader.js" async="async"></script>
+  <script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async="async"></script>
+  <script type="text/javascript" src="../../../../scripts/main.js" defer="defer"></script>
+  <script type="text/javascript" src="../../../../scripts/prism.js" async="async"></script>
+  <script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
 </head>
 
 <style>
@@ -118,17 +119,18 @@
   button:disabled {
     cursor: default;
   }
+
   a {
     text-decoration: none;
     color: inherit;
   }
+
   pre {
     white-space: pre-wrap;
     tab-size: 2;
   }
 
-  body
- {
+  body {
     /* color: #1f3349; */
     font-size: 17px;
     line-height: 24px;
@@ -204,6 +206,7 @@
     flex-grow: 1 !important;
     min-width: 0;
   }
+
   .mx-neg12 {
     margin-left: -12px !important;
     margin-right: -12px !important;
@@ -238,25 +241,21 @@
       padding-top: 3px !important;
       padding-bottom: 3px !important;
     }
-  
+
   }
 
   @font-face {
     font-family: "Cera";
     font-weight: 700;
-    src: url(https://api.mapbox.com/mapbox-assembly/fonts/CeraPRO-Bold.v1.woff2)
-        format("woff2"),
-      url(https://api.mapbox.com/mapbox-assembly/fonts/CeraPRO-Bold.v1.woff)
-        format("woff");
+    src: url(https://api.mapbox.com/mapbox-assembly/fonts/CeraPRO-Bold.v1.woff2) format("woff2"),
+      url(https://api.mapbox.com/mapbox-assembly/fonts/CeraPRO-Bold.v1.woff) format("woff");
   }
 
   @font-face {
     font-family: "Cera";
     font-style: italic;
-    src: url(https://api.mapbox.com/mapbox-assembly/fonts/CeraPRO-BoldItalic.v1.woff2)
-        format("woff2"),
-      url(https://api.mapbox.com/mapbox-assembly/fonts/CeraPRO-BoldItalic.v1.woff)
-        format("woff");
+    src: url(https://api.mapbox.com/mapbox-assembly/fonts/CeraPRO-BoldItalic.v1.woff2) format("woff2"),
+      url(https://api.mapbox.com/mapbox-assembly/fonts/CeraPRO-BoldItalic.v1.woff) format("woff");
   }
 
   body {
@@ -301,15 +300,15 @@
       width: 98% !important;
     }
   }
-  
- .shell-flex-child {
+
+  .shell-flex-child {
     display: block;
     max-width: 100%;
   }
 
 
   @media screen and (min-width: 1200px) {
-  .shell-ml18-mxl {
+    .shell-ml18-mxl {
       margin-left: 18px !important;
     }
   }
@@ -347,7 +346,7 @@
 </style>
 
 <body>
-<!-- <div class="navigation-wrapper" id="navigation-wrapper">
+  <!-- <div class="navigation-wrapper" id="navigation-wrapper">
     <div id="leftToggler"><span class="icon-toggler"></span></div>
     <div class="library-name">
             <a href="../../../../index.html">
@@ -362,151 +361,119 @@
     </div>
 </div> -->
 
-<header
-    class="shell-absolute shell-w-full shell-z1"
-    data-swiftype-index="false"
-    >
-    
-    <div
-      class="shell-none limiter limiter--wide shell-mt24 shell-flex-parent-mm shell-flex-parent--center-cross"
-    >
+  <header class="shell-absolute shell-w-full shell-z1" data-swiftype-index="false">
+
+    <div class="shell-none limiter limiter--wide shell-mt24 shell-flex-parent-mm shell-flex-parent--center-cross">
       <div
-        class="shell-flex-child shell-flex-child--grow shell-flex-parent shell-flex-parent--center-cross shell-flex-parent--end-main"
-      >
-        <div
-          class="shell-flex-parent shell-flex-parent--center-cross shell-flex-parent--end-main"
-        ></div>
+        class="shell-flex-child shell-flex-child--grow shell-flex-parent shell-flex-parent--center-cross shell-flex-parent--end-main">
+        <div class="shell-flex-parent shell-flex-parent--center-cross shell-flex-parent--end-main"></div>
       </div>
-      <div
-        class="shell-flex-child shell-ml6 shell-ml12-ml shell-ml18-mxl"
-      ></div>
+      <div class="shell-flex-child shell-ml6 shell-ml12-ml shell-ml18-mxl"></div>
     </div>
-    
-    
-    <div
-      class="shell-z1 shell-absolute shell-top shell-left shell-right shell-w-full"
-    >
-      <div
-        id="mobile-nav-backdrop"
-        data-test="mobile-nav-backdrop"
-        class="shell-absolute shell-bottom shell-left shell-right shell-mobile-nav__backdrop"
-        style="
+
+
+    <div class="shell-z1 shell-absolute shell-top shell-left shell-right shell-w-full">
+      <div id="mobile-nav-backdrop" data-test="mobile-nav-backdrop"
+        class="shell-absolute shell-bottom shell-left shell-right shell-mobile-nav__backdrop" style="
           top: 72px;
           background-image: linear-gradient(
             to bottom,
             transparent,
             rgba(31, 51, 73, 0.5)
           );
-        "
-      ></div>
-      <div
-        id="mobile-nav-menu"
-        data-test="mobile-nav-menu"
-        class="shell-absolute shell-z5 shell-w-full shell-animated-menu"
-        style="top: 0; right: 0"
-      >
-        <div
-          class="shell-shadow-darken10-bold shell-bg-white shell-clip shell-px24"
-          style="padding-top: 72px"
-        >
-         
+        "></div>
+      <div id="mobile-nav-menu" data-test="mobile-nav-menu"
+        class="shell-absolute shell-z5 shell-w-full shell-animated-menu" style="top: 0; right: 0">
+        <div class="shell-shadow-darken10-bold shell-bg-white shell-clip shell-px24" style="padding-top: 72px">
+
         </div>
       </div>
     </div>
-    </header>
+  </header>
 
-<div id="container">
-     <div id="leftColumn">
-    <div class="">
-      <div class="mb6 border-b border--darken10">
-        <div class="mb6">
-          <div class="dr-ui--product-menu">
-            <a
-              class="txt-fancy txt-l block color-blue-on-hover"
-              >UNL Android Sdk </a
-            >
+  <div id="container">
+    <div id="leftColumn">
+      <div class="">
+        <div class="mb6 border-b border--darken10">
+          <div class="mb6">
+            <div class="dr-ui--product-menu">
+              <a class="txt-fancy txt-l block color-blue-on-hover">UNL Android Sdk </a>
+            </div>
+          </div>
+        </div>
+        <nav class="mx-neg12">
+          <ul>
+            <li>
+              <div
+                class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 bg-blue-faint color-blue">
+                <a href="../../../../index.html" class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm"
+                  style="letter-spacing: 0.025em">Getting started</a>
+              </div>
+            </li>
+            <li>
+              <div class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75">
+                <a href="../../../../Authentication.html"
+                  class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm"
+                  style="letter-spacing: 0.025em">Authentication</a>
+              </div>
+            </li>
+            <div class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75">
+              <a href="../../../../UNL-Plugins.html" class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm"
+                style="letter-spacing: 0.025em">SDK Package</a>
+            </div>
+            </li>
+            <li class="Set_Unl_Link">
+              <div id="sideMenu"></div>
+            </li>
+            <li>
+              <div class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75">
+                <a href="../../../../Examples.html" class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm"
+                  style="letter-spacing: 0.025em">Examples</a>
+              </div>
+            </li>
+            <li>
+              <div class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75">
+                <a href="../../../../Releasenotes.html" class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm"
+                  style="letter-spacing: 0.025em">Release Notes</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div id="main">
+
+
+
+
+      <div class="main-content" id="content"
+        pageIds="sdk::com.unl.map.sdk.adapters/TilesAdapter.ItemSelectedListener/loadStyle/#com.unl.map.sdk.data.TileEnum/PointingToDeclaration//165651098">
+        <div class="breadcrumbs"><a href="../../../../index.html">sdk</a><span class="delimiter">/</span><a
+            href="../../index.html">com.unl.map.sdk.adapters</a><span class="delimiter">/</span><a
+            href="../index.html">TilesAdapter</a><span class="delimiter">/</span><a
+            href="index.html">ItemSelectedListener</a><span class="delimiter">/</span><span
+            class="current">loadStyle</span></div>
+        <div class="cover ">
+          <h1 class="cover"><span>load</span><wbr></wbr><span><span>Style</span></span></h1>
+        </div>
+        <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+          <div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk:dokkaHtml/release">
+            <div class="symbol monospace"><span class="token keyword">abstract </span><span
+                class="token keyword"></span><span class="token keyword">fun </span><a href="load-style.html"><span
+                  class="token function">loadStyle</span></a><span class="token punctuation">(</span><span
+                class="parameters "><span class="parameter ">tileData<span class="token operator">: </span><a
+                    href="../../../com.unl.map.sdk.data/-tile-enum/index.html">TileEnum</a></span></span><span
+                class="token punctuation">)</span></div>
           </div>
         </div>
       </div>
-      <nav class="mx-neg12">
-
-        <ul>
-          
-          <li>
-            <div
-              class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 bg-blue-faint color-blue"
-            >
-              <a
-                href="../../../../index.html"
-                class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm"
-                style="letter-spacing: 0.025em"
-                >Getting started</a
-              >
-            </div>
-          </li>
-          <li>
-            <div
-              class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
-            >
-              <a
-                href="../../../../Authentication.html"
-                class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm"
-                style="letter-spacing: 0.025em"
-                >Authentication</a
-              >
-            </div>
-          </li>
-           
-                              <div
-                                class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
-                              >
-                                <a
-                                  href="../../../../UNL-Plugins.html"
-                                  class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm"
-                                  style="letter-spacing: 0.025em"
-                                  >SDK Package</a
-                                >
-                              </div>
-                            </li>
-          <li class="Set_Unl_Link">
-            <div id="sideMenu"></div>
-          </li>  
-            <li>
-              <div
-                class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
-              >
-                <a
-                  href="../../../../Examples.html"
-                  class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm"
-                  style="letter-spacing: 0.025em"
-                  >Examples</a
-                >
-              </div>
-            </li>       
-        </ul>
-      </nav>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022
+          Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://unl.global/"><span>UNL
+              GLOBAL</span><span class="padded-icon"></span></a></span>
+      </div>
     </div>
-    
-
   </div>
-    <div id="main">
-
-         
-
-
-<div class="main-content" id="content" pageIds="sdk::com.unl.map.sdk.adapters/TilesAdapter.ItemSelectedListener/loadStyle/#com.unl.map.sdk.data.TileEnum/PointingToDeclaration//165651098">
-  <div class="breadcrumbs"><a href="../../../../index.html">sdk</a><span class="delimiter">/</span><a href="../../index.html">com.unl.map.sdk.adapters</a><span class="delimiter">/</span><a href="../index.html">TilesAdapter</a><span class="delimiter">/</span><a href="index.html">ItemSelectedListener</a><span class="delimiter">/</span><span class="current">loadStyle</span></div>
-  <div class="cover ">
-    <h1 class="cover"><span>load</span><wbr></wbr><span><span>Style</span></span></h1>
-  </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="load-style.html"><span class="token function">loadStyle</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tileData<span class="token operator">: </span><a href="../../../com.unl.map.sdk.data/-tile-enum/index.html">TileEnum</a></span></span><span class="token punctuation">)</span></div></div></div>
-</div>
-<div class="footer">
-    <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
-            class="pull-right"><span>Generated by </span><a
-            href="https://unl.global/"><span>UNL GLOBAL</span><span class="padded-icon"></span></a></span>
-  </div>
-    </div>
-</div>
 </body>
+
 </html>
